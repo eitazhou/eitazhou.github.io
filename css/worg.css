@@ -34,6 +34,12 @@
 	padding: 2em;
 	/* box-shadow: 3px 3px 5px #888; */
     }
+
+   body #disqus_thread {
+  margin-top: 40px;
+}
+
+
     body .title {
 	margin-left: 0px;
 	font-size: 24pt;
@@ -59,7 +65,7 @@
      max-width: 105%;
      line-height: 120%;
     }
-    
+
     #org-div-home-and-up{
 	position: fixed;
 	right: 0;
@@ -254,15 +260,15 @@ img.displayed {
 	border: none;
     }
 
-       
+
 　　       tbody:nth-child(even) {background-color: green;}
 　　/*         table tr:nth-child(4n+3) td{background:green;}
 　　        table tr:nth-child(4n+4) td{background:green;}
     $("tr").each(function(i){this.style.backgroundColor=['#ccc','#fff'][i%2]})
-    
+
     tr {background-color:expression((this.sectionRowIndex%2==0)?"#E1F1F1":"#F0F0F0")}*/
- 
-    
+
+
 
     code {
 	font-size: 100%;
@@ -1014,6 +1020,7 @@ img.displayed {
 	font-size: 80%;
 	font-style: italic;
     }
+
 
     #show_source {margin: 0; padding: 0;}
 

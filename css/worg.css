@@ -192,7 +192,7 @@ content: "*** "
 
     a {
     text-decoration: none;
-    cursor: crosshair;
+    cursor: hand;
     border-bottom: 1px dashed  #7c2acd;
     padding: 1px;
     color: black;

@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="utf-8-auto" xml:lang="utf-8-auto">
 <head>
-<!-- 2016-06-24 Fri 19:17 -->
+<!-- 2016-06-25 Sat 12:44 -->
 <meta  http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta  name="viewport" content="width=device-width, initial-scale=1" />
 <title>从图灵机到Emacs乃至FPGA</title>
@@ -170,18 +170,20 @@ for the JavaScript code in this tag.
 <h2 id="orgheadline1"><span class="section-number-2">1</span> Emacs 就是 Lisp Machine</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-在所有攻击Emacs的言论中，我最赞同也最具有杀伤力的一条是<b>“Emacs违背了UNIX的设计哲学”</b>。这当然一针见血,Emacs做了太多的事情,与采用搭积木哲学的UNIX格格不入。但事实上，“违背了UNIX的哲学”恰好是Emacs的价值所在，因为它的血统本身就在UNIX
-之外，它传承自MIT实验室的Lisp Machine。用过LISP机器的人自然不习惯UNIX这种看上去“低级”的操作系统。结果是，用过LISP Machine的用户除了抱怨UNIX外，只能寻求在UNIX上构建一个新的层，来弥补UNIX的不足。这事情的一个结果就是造就了
+在所有攻击Emacs的言论中，我最赞同也最具有杀伤力的一条是<b>Emacs违背了UNIX的设计哲学</b>。这当然一针见血,Emacs做了太多的事情,与采用<a href="http://www.faqs.org/docs/artu/ch01s06.html">搭积木哲学的UNIX</a>格格不入。但事实上，“违背了UNIX的哲学”恰好是Emacs的价值所在，因为它的血统本身就在UNIX
+之外，它传承自MIT实验室的<a href="https://en.wikipedia.org/wiki/Lisp_machine">Lisp Machine</a>。用过LISP机器的人自然不习惯UNIX这种看上去“低级”的操作系统。结果是，用过LISP Machine的用户除了抱怨UNIX外，只能寻求在UNIX上构建一个新的层，来弥补UNIX的不足。这事情的一个结果就是造就了
 Emacs这个怪兽，到最后几乎所有能在UNIX里做的事情，都能在Emacs里完成。这样，除了操作系统内核外，Emacs 完全取代了 UNIX 环境。Emacs 功能强大到大家都同意
-Emacs 是个万能软件，而 vi 用户则开玩笑说 Emacs 是个缺少一个好编辑器的操作系统。大家都知道，Emacs 的作者正是从 MIT 出来的 Richard Stallman。
+Emacs 是个万能软件，而 vi 用户则开玩笑说 Emacs 是个缺少一个好编辑器的操作系统。大家都知道，Emacs 的作者正是从 MIT 出来的<a href="https://en.wikipedia.org/wiki/Richard_Stallman">Richard Stallman</a>。
 </p>
 
 <p>
-Lisp Machine是基于Lisp或者说是基于Lambda Calculus。上世纪三十年代，A.Church为了精确定义可计算性,提出了Lambda Calculus的概念。随后Alan Turing提出了图灵机，并以一篇「可计算性与lambda可定义性」构建了Church–Turing thesis，奠定了现代计算机理论的基石。
+Lisp Machine是基于Lisp或者说是基于<a href="https://en.wikipedia.org/wiki/Lambda_calculus">Lambda Calculus</a>。上世纪三十年代，<a href="https://en.wikipedia.org/wiki/Alonzo_Church">A.Church</a>为了精确定义可计算性,提出了Lambda Calculus的概念。随后<a href="https://en.wikipedia.org/wiki/Alan_Turing">Alan Turing</a>提出了<a href="https://en.wikipedia.org/wiki/Turing_machine">图灵机
+(Turing machine)</a>，并以一篇<code>可计算性与lambda可定义性</code>构建了<a href="https://en.wikipedia.org/wiki/Church%E2%80%93Turing_thesis">Church–Turing
+thesis</a>，奠定了现代计算机理论的基石。
 </p>
 
 <p>
-Turing和Church从不同的角度描述了「什么是计算机」这个问题。而这两个角度在后世的实践中就变成了Turing Machine和Lisp Machine,从数学和计算机科学的角度上来讲，它们是等效的。但在哲学理念上，我们可以通过Vi和Emacs的使用哲学一窥其妙。
+Turing和Church从不同的角度描述了<code>什么是计算</code>这个问题。而这两个角度在后世的实践中就变成了Turing Machine和Lisp Machine,从数学和计算机科学的角度上来讲，它们是等效的。但在哲学理念上，我们可以通过Vi和Emacs的使用哲学一窥其妙。
 </p>
 </div>
 </div>
@@ -191,11 +193,11 @@ Turing和Church从不同的角度描述了「什么是计算机」这个问题�
 <div class="outline-text-2" id="text-2">
 <p>
 Vi最让人印象深刻的并非是它繁杂的快捷键，而是它是一个有状态的编辑器。最基本的，
-Vi有三种模式——normal, insert 和 command-line。用户通过关键键（「Escape」和「:」)进行状态转换。在normal-mode下，用户可以通过一系列命令操作文档，这些命令的组织状态类似于运算逆波兰表示法(Reverse Polish notation form),这是一种典型的基于状态机的解析方式——在对命令的读取解析过程种，每碰到一个数值，就把它推进堆栈；每遇到一个运算符，就用它对临近数值求值，并且推回堆栈中——这是一种典型的图灵机的工作方式——基于指令和状态寄存器，它读取用户输入的方式就仿佛是在读取一条打满了空洞的输入卡带。
+Vi有三种模式——normal, insert 和 command-line。用户通过关键键（「Escape」和「:」)进行状态转换。在normal-mode下，用户可以通过一系列命令操作文档，这些命令的组织状态类似于运算逆波兰表示法(Reverse Polish notation form),这是一种典型的基于状态机的解析方式——在对命令的读取解析过程种，每碰到一个数值，就把它推进堆栈；每遇到一个运算符，就用它对临近数值求值，并且推回堆栈中——这是一种典型的图灵机的工作方式——<b>基于指令和状态寄存器</b>，它读取用户输入的方式就仿佛是在读取一条打满了空洞的输入卡带。
 </p>
 
 <p>
-我们再来看看Emacs的行为方式。对于Emacs来说，你的任何输入所能导致的结果只有一个,那就是执行该输入所映射的相关函数，而所有输出的结果都来自于函数的副作用。比如说你输入的时候执行的是insert函数,它的副作用是在屏幕上显示输入;打开文件的时候执行的是load-file函数,它的副作用是将文件读取到当前buffer;而更为神奇的是，这些函数是可推导的。这意味着，它的命令并不同Vi那样被抽象成若干状态和指令集，而是类似
+我们再来看看Emacs的行为方式。对于Emacs来说，你的任何输入所能导致的结果只有一个,那就是执行该输入所映射的相关函数，而所有输出的结果都来自于函数的副作用。比如说你输入的时候执行的是insert函数,它的副作用是在屏幕上显示输入;打开文件的时候执行的是load-file函数,它的副作用是将文件读取到当前buffer;而<b>更为神奇的是，这些函数是可推导的</b>。这意味着，它的命令并不同Vi那样被抽象成若干状态和指令集，而是类似
 (load-file (insert "test"))这样基于function list/chain的处理方式。你或许会说这样的处理方式同比vi并没有本质区别，因为lisp machine解构开来也就是list
 processing machine，和Turing那个吃纸带的家伙有什么分别呢？
 </p>
@@ -210,7 +212,7 @@ processing machine，和Turing那个吃纸带的家伙有什么分别呢？
 <h2 id="orgheadline3"><span class="section-number-2">3</span> FP, ELisp 和 Haskell</h2>
 <div class="outline-text-2" id="text-3">
 <p>
-这几乎是一桩不亚于vi/Emacs的公案，公案的描述是「我们为什么需要FP（函数式编程语言）」特别是纯粹的函数式编程语言。这里要特别提到的是，对于严肃的FP拥护者，lisp
+这几乎是一桩不亚于vi/Emacs的公案，公案的描述是<code>我们为什么需要FP（函数式编程语言）</code>特别是纯粹的函数式编程语言。这里要特别提到的是，对于严肃的FP拥护者，lisp
 并不算是严格的函数式编程语言，因为Lisp还存在状态（从Elisp编码时铺天盖地的Set就可看出这一点）。但即便如此，FP依旧能比C/java这类指令式语言更能描述好问题的本质，逻辑可推演带来的好处是逻辑可肢解，你不再需要依赖严格的时序的纸带那样的奇怪东西就能完成问题的计算——计算机未必要设计成纸带阅读器的模样，无论是在并发需求上，还是工业优化上都有充分的理由。
 </p>
 
@@ -248,7 +250,7 @@ Machine实际上是基于ASIC，而FPGA无疑会让它变得更加灵活——�
 </div>
 </div>
 <div id="postamble" class="status">
-<p class="postamble">Last Updated 2016-06-24 Fri 19:16. </p>
+<p class="postamble">Last Updated 2016-06-25 Sat 12:43. </p>
 <script>
 var _hmt = _hmt || [];
 (function() {

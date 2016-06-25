@@ -5,20 +5,21 @@
     html {
 	margin: 0;
 	/*font: .9em/1.6em Kaiti, "Droid Serif", Cambria, Georgia, "DejaVu Serif", serif;*/
-	background-image: url(http://orgmode.org/img/org-mode-unicorn-logo-worg.png);
+	background-image: url(../img/zen.org);
 	background-attachment: fixed;
-	background-position: right bottom;
+	background-position: top left;
 	background-repeat: no-repeat;
-	background-color: white;
+	background-color: #f5f5dc;
     }
 
     body {
         font-family: "fira sans", sans,Helvetica, Arial, Vernada, Tahoma, "Songti SC",STFangsong, "Songti SC", "Microsoft YaHei", STXihei, Heiti,sans-serif;
 	font-size: 16pt;
 	/*line-height: 18pt;*/
-	/*color: black;*/
+	/*color: black;
         color: #4E4742;
-        color: #3F3B3B;
+        color: #3F3B3B;*/
+        color:#f5f5dc
         background: #F5F5ED;
 	margin-top: 0;
         margin: 5% 10% 5% 10%;
@@ -26,6 +27,7 @@
         width: 70%;
         line-height: 150%;
         border: 1px solid LightGrey;
+        text-align: justify;
 
     }
     body #content {
@@ -40,7 +42,7 @@
 
    body #disqus_thread {
   margin-top: 40px;
-}
+   }
 
 
     body .title {
@@ -196,13 +198,13 @@ content: "*** "
     border-bottom: 1px dashed  #7c2acd;
     padding: 1px;
     color: black;
-}
+    }
 
 
     a:hover {
           color: #7c2acd;
 	/*background-color: LightGrey;*/
-}
+    }
 
 img {
     box-shadow: 0 0 10px #555;

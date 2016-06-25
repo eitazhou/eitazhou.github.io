@@ -30,7 +30,7 @@
     }
     body #content {
 	padding-top: 0px;
-	max-width: 110%;
+	max-width: 110%p;
 	min-width: 700px;
 	margin-left: 20px;
 	background-color: #F5F5ED;
@@ -193,7 +193,7 @@ content: "*** "
     a {
     text-decoration: none;
     cursor: crosshair;
-    border-bottom: 1px dashed Red;
+    border-bottom: 1px dashed LightGrey;
     padding: 1px;
     color: black;
 }

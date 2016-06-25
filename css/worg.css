@@ -193,14 +193,15 @@ content: "*** "
     a {
     text-decoration: none;
     cursor: crosshair;
-    border-bottom: 1px dashed LightGrey;
+    border-bottom: 1px dashed  #7c2acd;
     padding: 1px;
     color: black;
 }
 
 
-a:hover {
-	background-color: LightGrey;
+    a:hover {
+          color: #7c2acd;
+	/*background-color: LightGrey;*/
 }
 
 img {

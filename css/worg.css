@@ -19,7 +19,7 @@
 	/*color: black;
         color: #4E4742;
         color: #3F3B3B;*/
-        color:#f5f5ed;
+        color:#091F31;
         background: #F5F5ED;
 	margin-top: 0;
         margin: 5% 10% 5% 10%;
@@ -206,14 +206,15 @@ content: "*** "
     a {
     text-decoration: none;
     cursor: hand;
-    border-bottom: 1px dashed  #7c2acd;
+    border-bottom: 1px dashed  #76319F;
     padding: 1px;
     color: black;
     }
 
 
     a:hover {
-          color: #7c2acd;
+        /*color: #7c2acd;*/
+        color: #76319F;
 	/*background-color: LightGrey;*/
     }
 
@@ -1043,13 +1044,13 @@ img.displayed {
 
     #postamble {
 	font-size: 75%;
-	min-width: 700px;
-	max-width: 80%;
-	margin-left: 20px;
-	margin-top: 10px;
-	padding: .2em;
-	border: 1px solid gray;
-	background-color: #ffffff;
+	min-width: 1000px;
+	max-width: 100%;
+	margin-left: 0px;
+	margin-top: 0px;
+	/*padding: .2em;
+	border: 1px solid gray;*/
+	background-color: #f5f5ed;
 	z-index: -1000;
     }
 

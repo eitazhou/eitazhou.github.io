@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="utf-8-auto" xml:lang="utf-8-auto">
 <head>
-<!-- 2016-06-25 Sat 19:32 -->
+<!-- 2016-06-25 Sat 19:57 -->
 <meta  http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta  name="viewport" content="width=device-width, initial-scale=1" />
 <title>从图灵机到Emacs乃至FPGA</title>
@@ -148,17 +148,6 @@ for the JavaScript code in this tag.
 <body>
 <div id="content">
 <h1 class="title">从图灵机到Emacs乃至FPGA</h1>
-<div id="table-of-contents">
-<h2>Table of Contents</h2>
-<div id="text-table-of-contents">
-<ul>
-<li><a href="#orgheadline1">1. Emacs 就是 Lisp Machine</a></li>
-<li><a href="#orgheadline2">2. Lisp Machine 和 Turing pMachine</a></li>
-<li><a href="#orgheadline3">3. FP, ELisp 和 Haskell</a></li>
-<li><a href="#orgheadline4">4. LISP Machine on FPGA</a></li>
-</ul>
-</div>
-</div>
 
 <div class="figure">
 <p><img src="./img/j6NnYnF.png" alt="j6NnYnF.png" />
@@ -167,8 +156,8 @@ for the JavaScript code in this tag.
 
 
 <div id="outline-container-orgheadline1" class="outline-2">
-<h2 id="orgheadline1"><span class="section-number-2">1</span> Emacs 就是 Lisp Machine</h2>
-<div class="outline-text-2" id="text-1">
+<h2 id="orgheadline1">Emacs 就是 Lisp Machine</h2>
+<div class="outline-text-2" id="text-orgheadline1">
 <p>
 在所有攻击Emacs的言论中，我最赞同也最具有杀伤力的一条是<b>Emacs违背了UNIX的设计哲学</b>。这当然一针见血,Emacs做了太多的事情,与采用<a href="http://www.faqs.org/docs/artu/ch01s06.html">搭积木哲学的UNIX</a>格格不入。但事实上，“违背了UNIX的哲学”恰好是Emacs的价值所在，因为它的血统本身就在UNIX
 之外，它传承自MIT实验室的<a href="https://en.wikipedia.org/wiki/Lisp_machine">Lisp Machine</a>。用过LISP机器的人自然不习惯UNIX这种看上去“低级”的操作系统。结果是，用过LISP Machine的用户除了抱怨UNIX外，只能寻求在UNIX上构建一个新的层，来弥补UNIX的不足。这事情的一个结果就是造就了
@@ -189,8 +178,8 @@ Turing和Church从不同的角度描述了<code>什么是计算</code>这个问�
 </div>
 
 <div id="outline-container-orgheadline2" class="outline-2">
-<h2 id="orgheadline2"><span class="section-number-2">2</span> Lisp Machine 和 Turing pMachine</h2>
-<div class="outline-text-2" id="text-2">
+<h2 id="orgheadline2">Lisp Machine 和 Turing pMachine</h2>
+<div class="outline-text-2" id="text-orgheadline2">
 <p>
 Vi最让人印象深刻的并非是它繁杂的快捷键，而是它是一个有状态的编辑器。最基本的，
 Vi有三种模式——normal, insert 和 command-line。用户通过关键键（「Escape」和「:」)进行状态转换。在normal-mode下，用户可以通过一系列命令操作文档，这些命令的组织状态类似于运算逆波兰表示法(Reverse Polish notation form),这是一种典型的基于状态机的解析方式——在对命令的读取解析过程种，每碰到一个数值，就把它推进堆栈；每遇到一个运算符，就用它对临近数值求值，并且推回堆栈中——这是一种典型的图灵机的工作方式——<b>基于指令和状态寄存器</b>，它读取用户输入的方式就仿佛是在读取一条打满了空洞的输入卡带。
@@ -209,8 +198,8 @@ processing machine，和Turing那个吃纸带的家伙有什么分别呢？
 </div>
 
 <div id="outline-container-orgheadline3" class="outline-2">
-<h2 id="orgheadline3"><span class="section-number-2">3</span> FP, ELisp 和 Haskell</h2>
-<div class="outline-text-2" id="text-3">
+<h2 id="orgheadline3">FP, ELisp 和 Haskell</h2>
+<div class="outline-text-2" id="text-orgheadline3">
 <p>
 这几乎是一桩不亚于vi/Emacs的公案，公案的描述是<code>我们为什么需要FP（函数式编程语言）</code>特别是纯粹的函数式编程语言。这里要特别提到的是，对于严肃的FP拥护者，lisp
 并不算是严格的函数式编程语言，因为Lisp还存在状态（从Elisp编码时铺天盖地的Set就可看出这一点）。但即便如此，FP依旧能比C/java这类指令式语言更能描述好问题的本质，逻辑可推演带来的好处是逻辑可肢解，你不再需要依赖严格的时序的纸带那样的奇怪东西就能完成问题的计算——计算机未必要设计成纸带阅读器的模样，无论是在并发需求上，还是工业优化上都有充分的理由。
@@ -231,8 +220,8 @@ processing machine，和Turing那个吃纸带的家伙有什么分别呢？
 </div>
 
 <div id="outline-container-orgheadline4" class="outline-2">
-<h2 id="orgheadline4"><span class="section-number-2">4</span> LISP Machine on FPGA</h2>
-<div class="outline-text-2" id="text-4">
+<h2 id="orgheadline4">LISP Machine on FPGA</h2>
+<div class="outline-text-2" id="text-orgheadline4">
 <p>
 而在另一个方面，硬件厂商在架构设计时，已经越来越倾向于ARM + FPGA的架构。FPGA即是现场可编程门阵列(Field-programmable Gate Array)——一种可基于硬件的可编程逻辑模块。FPGA的魅力在于，它的逻辑实现是真正的直接基于硬件的，而不是类似CPU那样是「模拟」的，这意味着我们甚至可以利用FPGA直接对特定的逻辑模块或函数进行「真硬件加速」。IBM认为：对于未来的计算机架构来说，FPGA将成为服务器的虚拟资源：一种受保护的虚拟架构，在这种架构上，系统软件可以动态建立可共享的加速器。这类加速器就是就是大量可动态重新配置的逻辑门。而在考虑对逻辑器件进行编程的时候，首先被淘汰的却是在传统PC上性能优异大行其道的C了。Tabular的CEO兼CTO认为在对FPGA编程是，虽然RTL用起来很差，但C显然更糟糕，虽然那是非常底层的工作，而或许基于
 lambda-calculus的Haskell会好些，它毕竟直接面向逻辑和数学的。

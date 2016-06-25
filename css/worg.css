@@ -4,8 +4,8 @@
 {
     html {
 	margin: 0;
-	/*font: .9em/1.6em Kaiti, "Droid Serif", Cambria, Georgia, "DejaVu Serif", serif;*/
-	background-image: url(../img/zen.jpg);
+	/*font: .9em/1.6em Kaiti, "Droid Serif", Cambria, Georgia, "DejaVu Serif", serif;
+	background-image: url(../img/zen.jpg);*/
 	background-attachment: fixed;
 	background-position: top left;
 	background-repeat: no-repeat;
@@ -101,6 +101,7 @@
 	/* ensure doesn't flow off the screen when expanded */
 	max-height: 80%;
 	overflow: auto; }
+
     #table-of-contents h2 {
 	font-size: 13pt;
 	max-width: 9em;
@@ -117,6 +118,8 @@
 	display: block;
 	padding: 0.5em;
 	margin-top: -1.5em; }
+
+
 
     #license {
       /* padding: .3em; */

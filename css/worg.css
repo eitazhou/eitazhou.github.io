@@ -1055,7 +1055,11 @@ img.displayed {
         
         
     }
+    .footer {
+        font-size: 120%;
+        margin-left: 20px;
 
+    }
 
 } /* END OF @media all */
 

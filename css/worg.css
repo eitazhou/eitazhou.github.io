@@ -1057,8 +1057,9 @@ img.displayed {
     }
     .footer {
         font-size: 120%;
-        margin-left: 20px;
-
+        margin-left: 280px;
+        margin-top: 100px;
+        color:ligthgray;
     }
 
 } /* END OF @media all */

@@ -1046,11 +1046,11 @@ img.displayed {
 	font-size: 75%;
 	min-width: 1000px;
 	max-width: 100%;
-	margin-left: 0px;
-	margin-top: 0px;
+	margin-left: 15px;
+	margin-top: 5px;
 	padding: 0em;
 	/*border: 1px solid gray;*/
-	background-color: #fff5ed;
+	background-color: #f5f5ed;
 	z-index: -1000;
         
         

@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="utf-8-auto" xml:lang="utf-8-auto">
+<head>
+<title>从图灵机到Emac再到FPGA</title>
+<!-- 2016-11-29 Tue 02:06 -->
+<meta  http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta  name="generator" content="Org-mode" />
+<meta  name="author" content="匿名" />
+<meta  name="description" content="计算模型的发展简史，emacs"
+ />
+<meta  name="keywords" content="图灵机 emacs lambda演算 函数式编程 lisp 计算模型" />
+<style type="text/css">
+ <!--/*--><![CDATA[/*><!--*/
+  .title  { text-align: center; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { color: green; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #ccc;
+    box-shadow: 3px 3px 3px #eee;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: visible;
+    padding-top: 1.2em;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    background-color: white;
+    top: -10px;
+    right: 10px;
+    padding: 3px;
+    border: 1px solid black;
+  }
+  pre.src:hover:before { display: inline;}
+  pre.src-sh:before    { content: 'sh'; }
+  pre.src-bash:before  { content: 'sh'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-R:before     { content: 'R'; }
+  pre.src-perl:before  { content: 'Perl'; }
+  pre.src-java:before  { content: 'Java'; }
+  pre.src-sql:before   { content: 'SQL'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.right  { text-align: center;  }
+  th.left   { text-align: center;   }
+  th.center { text-align: center; }
+  td.right  { text-align: right;  }
+  td.left   { text-align: left;   }
+  td.center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara:nth-child(2) { display: inline; }
+  .footpara { display: block; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  /*]]>*/-->
+</style>
+<link rel="stylesheet" type="text/css" href="css/worg.css" />
+<script type="text/javascript">
+/*
+@licstart  The following is the entire license notice for the
+JavaScript code in this tag.
+
+Copyright (C) 2012-2013 Free Software Foundation, Inc.
+
+The JavaScript code in this tag is free software: you can
+redistribute it and/or modify it under the terms of the GNU
+General Public License (GNU GPL) as published by the Free Software
+Foundation, either version 3 of the License, or (at your option)
+any later version.  The code is distributed WITHOUT ANY WARRANTY;
+without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
+
+As additional permission under GNU GPL version 3 section 7, you
+may distribute non-source (e.g., minimized or compacted) forms of
+that code without the copy of the GNU GPL normally required by
+section 4, provided you include this license notice and a URL
+through which recipients can access the Corresponding Source.
+
+
+@licend  The above is the entire license notice
+for the JavaScript code in this tag.
+*/
+<!--/*--><![CDATA[/*><!--*/
+ function CodeHighlightOn(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(null != target) {
+     elem.cacheClassElem = elem.className;
+     elem.cacheClassTarget = target.className;
+     target.className = "code-highlighted";
+     elem.className   = "code-highlighted";
+   }
+ }
+ function CodeHighlightOff(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(elem.cacheClassElem)
+     elem.className = elem.cacheClassElem;
+   if(elem.cacheClassTarget)
+     target.className = elem.cacheClassTarget;
+ }
+/*]]>*///-->
+</script>
+</head>
+<body>
+<div id="content">
+<h1 class="title">从图灵机到Emac再到FPGA</h1>
+
+<div class="figure">
+<p><img src="./img/j6NnYnF.png" alt="j6NnYnF.png" />
+</p>
+</div>
+
+
+
+
+<div id="outline-container-sec-1" class="outline-2">
+<h2 id="sec-1">Emacs 就是 Lisp Machine</h2>
+<div class="outline-text-2" id="text-1">
+<p>
+在所有攻击Emacs的言论中，我最赞同也最具有杀伤力的一条是<b>Emacs违背了UNIX的设计哲学</b>。这当然一针见血,Emacs做了太多的事情,与采用<a href="http://www.faqs.org/docs/artu/ch01s06.html">搭积木哲学的UNIX</a>格格不入。但事实上，“违背了UNIX的哲学”恰好是Emacs的价值所在，因为它的血统本身就在UNIX
+之外，它传承自MIT实验室的<a href="https://en.wikipedia.org/wiki/Lisp_machine">Lisp Machine</a>。用过LISP机器的人自然不习惯UNIX这种看上去“低级”的操作系统。结果是，用过LISP Machine的用户除了抱怨UNIX外，只能寻求在UNIX上构建一个新的层，来弥补UNIX的不足。这事情的一个结果就是造就了
+Emacs这个怪兽，到最后几乎所有能在UNIX里做的事情，都能在Emacs里完成。这样，除了操作系统内核外，Emacs 完全取代了 UNIX 环境。Emacs 功能强大到大家都同意
+Emacs 是个万能软件，而 vi 用户则开玩笑说 Emacs 是个缺少一个好编辑器的操作系统。大家都知道，Emacs 的作者正是从 MIT 出来的<a href="https://en.wikipedia.org/wiki/Richard_Stallman">Richard Stallman</a>。
+</p>
+
+<p>
+Lisp Machine是基于Lisp或者说是基于<a href="https://en.wikipedia.org/wiki/Lambda_calculus">Lambda Calculus</a>。上世纪三十年代，<a href="https://en.wikipedia.org/wiki/Alonzo_Church">A.Church</a>为了精确定义可计算性,提出了Lambda Calculus的概念。随后<a href="https://en.wikipedia.org/wiki/Alan_Turing">Alan Turing</a>提出了<a href="https://en.wikipedia.org/wiki/Turing_machine">图灵机
+(Turing machine)</a>，并以一篇<code>可计算性与lambda可定义性</code>构建了<a href="https://en.wikipedia.org/wiki/Church%E2%80%93Turing_thesis">Church–Turing
+thesis</a>，奠定了现代计算机理论的基石。
+</p>
+
+<p>
+Turing和Church从不同的角度描述了<code>什么是计算</code>这个问题。而这两个角度在后世的实践中就变成了Turing Machine和Lisp Machine,从数学和计算机科学的角度上来讲，它们是等效的。但在哲学理念上，我们可以通过Vi和Emacs的使用哲学一窥其妙。
+</p>
+</div>
+</div>
+
+<div id="outline-container-sec-2" class="outline-2">
+<h2 id="sec-2">Lisp Machine 和 Turing Machine</h2>
+<div class="outline-text-2" id="text-2">
+<p>
+Vi最让人印象深刻的并非是它繁杂的快捷键，而是它是一个有状态的编辑器。最基本的，
+Vi有三种模式——normal, insert 和 command-line。用户通过关键键（「Escape」和「:」)进行状态转换。在normal-mode下，用户可以通过一系列命令操作文档，这些命令的组织状态类似于运算逆波兰表示法(Reverse Polish notation form),这是一种典型的基于状态机的解析方式——在对命令的读取解析过程种，每碰到一个数值，就把它推进堆栈；每遇到一个运算符，就用它对临近数值求值，并且推回堆栈中——这是一种典型的图灵机的工作方式——<b>基于指令和状态寄存器</b>，它读取用户输入的方式就仿佛是在读取一条打满了空洞的输入卡带。
+</p>
+
+<p>
+我们再来看看Emacs的行为方式。对于Emacs来说，你的任何输入所能导致的结果只有一个,那就是执行该输入所映射的相关函数，而所有输出的结果都来自于函数的副作用。比如说你输入的时候执行的是insert函数,它的副作用是在屏幕上显示输入；打开文件的时候执行的是load-file函数,它的副作用是将文件读取到当前buffer;而<b>更为神奇的是，这些函数是可推导的</b>。这意味着，它的命令并不同Vi那样被抽象成若干状态和指令集，而是类似
+(load-file (insert "test"))这样基于function list/chain的处理方式。你或许会说这样的处理方式同比vi并没有本质区别，因为lisp machine解构开来也就是list
+processing machine，和Turing那个吃纸带的家伙有什么分别呢？
+</p>
+
+<p>
+这里的区别主要在于，在vi里你可以用指令和状态来描述问题,而Emacs用函数和函数的副作用来描述问题,而这里的函数本身就是描述。可推导的函数和功能能创造更多的分析和解决问题的空间，而Turing Machine那种对指令集和状态的高度依赖却往往让人无法真正的从数学和逻辑的角度来理解问题——更多的是Just Works而非How it Works——但是为什么我们需要它们变得更接近于数学和逻辑呢？
+</p>
+</div>
+</div>
+
+<div id="outline-container-sec-3" class="outline-2">
+<h2 id="sec-3">FP, ELisp 和 Haskell</h2>
+<div class="outline-text-2" id="text-3">
+<p>
+这几乎是一桩不亚于vi/Emacs的公案，公案的描述是<code>我们为什么需要FP（函数式编程语言）</code>特别是纯粹的函数式编程语言。这里要特别提到的是，对于严肃的FP拥护者，lisp
+并不算是严格的函数式编程语言，因为Lisp还存在状态（从Elisp编码时铺天盖地的Set就可看出这一点）。但即便如此，FP依旧能比C/java这类指令式语言更能描述好问题的本质，逻辑可推演带来的好处是逻辑可肢解，你不再需要依赖严格的时序的纸带那样的奇怪东西就能完成问题的计算——计算机未必要设计成纸带阅读器的模样，无论是在并发需求上，还是工业优化上都有充分的理由。
+</p>
+
+<p>
+我们知道现代计算机其实就是通用图灵机(Universal Turing Machine)，它被创造出来用以接受任何「图灵机描述」，它的本质是一台处理打孔纸带（或者二进制电平流）的工具。基于这样的理念，传统的CPU被设计成了一个拥有诸多寄存器和算术逻辑单元的「纸带」读取器，你可以利用纸带向寄存器储存状态或数值以完成一个图灵机描述。数十年来，这个架构随着摩尔定律的验证发展到了极致。但在近几年，我们却发现摩尔定律变得和以前不一样了——人们发现集成集成电路的复杂度是不可能无限度的增加的，单个芯片上的电子元件数量必定会在某个时刻逼近一个极限。于是生产商们对摩尔定律做了一些小修改，那就是多核——CPU的核心数量将会每隔18个月就翻一番。
+</p>
+
+<p>
+那么基于纸带模型的图灵机是如何处理多核心问题的呢？在传统单核心CPU架构上，事情是这样的。有若干条描述图灵机的纸带，一个纸带读取装置(处理器），由一个条被称作「scheduler」的纸带负责调度哪一条纸带应该被读取，读取多长时间，哪一条纸带应该先放到一边，是采取FIFO的方式还是RR的方式来创建规则。你可以想像一个经典的过海关模型——有若干条长度不一的队伍，但是海关的检口只有一个，于是我们有一个调度员居中调度：让队伍A先检五分钟，然后轮到队伍B，或者每条队伍轮着来。但一旦处理器变成了多核，问题就出现了——当你有四个或者更多处理器的时候，你当然可以让处理器和纸带依旧像传统模型那样进行碎片化的调度，但它显然不够聪明，更聪明的方式是让这些处理器真正的并行开工——但是海关的调度员开始郁闷了，我们有四个检口，若干队伍，包括外国人队伍，本地居民队伍，持旅行签证的队伍，持长期逗留签证的队伍，应该如何调度才能达到最高效率呢？而更甚者，很可能队伍A的某個成員和队伍B中的某個成員是情侶关系，他们持有本地戶籍的小孩又在队伍C中。——这便是图灵纸带模型的局限性，也是當前指令式编程死锁、堆栈跟踪、低级处理器缓存命中率低等问题的根源。
+</p>
+
+<p>
+但函数式编程（FP），或者Lambda Calculus却不存在这样的问题。因为函数式编程不存在状态和执行顺序——由于没有状态，因而不存在破坏性赋值；由于确定的函数输入和输出映射，因而能够更自由的完成调度。事实上FP，如Elang，Haskell，在高并发处理的环境下业已举足轻重。
+</p>
+</div>
+</div>
+
+<div id="outline-container-sec-4" class="outline-2">
+<h2 id="sec-4">LISP Machine on FPGA</h2>
+<div class="outline-text-2" id="text-4">
+<p>
+而在另一个方面，硬件厂商在架构设计时，已经越来越倾向于ARM + FPGA的架构。FPGA即是现场可编程门阵列(Field-programmable Gate Array)——一种可基于硬件的可编程逻辑模块。FPGA的魅力在于，它的逻辑实现是真正的直接基于硬件的，而不是类似CPU那样是「模拟」的，这意味着我们甚至可以利用FPGA直接对特定的逻辑模块或函数进行「真硬件加速」。IBM认为：对于未来的计算机架构来说，FPGA将成为服务器的虚拟资源：一种受保护的虚拟架构，在这种架构上，系统软件可以动态建立可共享的加速器。这类加速器就是就是大量可动态重新配置的逻辑门。而在考虑对逻辑器件进行编程的时候，首先被淘汰的却是在传统PC上性能优异大行其道的C了。Tabular的CEO兼CTO认为在对FPGA编程是，虽然RTL用起来很差，但C显然更糟糕，虽然那是非常底层的工作，而或许基于
+lambda-calculus的Haskell会好些，它毕竟直接面向逻辑和数学的。
+</p>
+
+<p>
+其实从某种角度上来讲，FPGA架构更适合或者就是LISP Machine。只不过传统的LISP
+Machine实际上是基于ASIC，而FPGA无疑会让它变得更加灵活——这一切皆由于Lisp可以推导至逻辑层的特性——就仿佛是Emacs底下的那一层薄薄的C。
+</p>
+
+<p>
+我们从晶体管时代一路走来，从集成电路到量子和DNA计算机。百花齐放，各种思想和哲学层出不穷，或者Unix和Lisp Machine都将变成过眼云烟，但唯有逻辑和数学永生。
+</p>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+
+
+<!-- 多说评论框 start -->
+        <div class="ds-thread" data-thread-key="请将此处替换成文章在你的站点中的ID" data-title="请替换成文章的标题" data-url="请替换成文章的网址"></div>
+<!-- 多说评论框 end -->
+
+<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+<script type="text/javascript">
+var duoshuoQuery = {short_name:'eitazhou'};
+        (function() {
+                var ds = document.createElement('script');
+                ds.type = 'text/javascript';ds.async = true;
+                ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+                ds.charset = 'UTF-8';
+                (document.getElementsByTagName('head')[0] 
+                 || document.getElementsByTagName('body')[0]).appendChild(ds);
+        })();
+        </script>
+<!-- 多说公共JS代码 end -->
+
+
+   <div id = "baidu_tongji">
+   <script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "//hm.baidu.com/hm.js?4a01ad9c7f0b2821093f8db022570698";
+  var s = document.getElementsByTagName("script")[0];
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+
+   </div>
+
+   <div class='footer'>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;更新时间：2016-11-29 Tue 01:51 <br>
+   本博客基于 <a href="http://www.gnu.org/software/emacs/">Emacs</a> 25.1.1 (<a href="http://orgmode.org">Org</a> mode 8.2.10) 打造。
+   </div>
+</div>
+</body>
+</html>

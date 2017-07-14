@@ -13,8 +13,8 @@
     }
 
     body {
-        font-family: "fira sans", Helvetica,sans, Arial, Vernada, Tahoma, SimSun,"Songti SC",STFangsong, "Songti SC", "Microsoft YaHei", STXihei, Heiti,sans-serif;
-	font-size: 18pt;
+        font-family: "fira sans", Helvetica,sans, Arial, Vernada, Tahoma,"Microsoft YaHei","WenQuanYi Micro Hei",SimSun,"Songti SC",STFangsong, "Songti SC", "Microsoft YaHei", STXihei, Heiti,sans-serif;
+	font-size: 17pt;
 	/*line-height: 18pt;*/
 	/*color: black;
         color: #4E4742;
@@ -24,7 +24,7 @@
 	margin-top: 0;
         margin: 5% 10% 5% 10%;
         padding: 2% 2% 2% 2%;
-        width: 70%;
+        width: 75%;
         line-height: 200%;
         border: 1px dashed #EBEEF2;
         text-align: justify;
@@ -32,7 +32,7 @@
     }
     body #content {
         font-family: "fira sans", Helvetica,sans, Arial, Vernada, Tahoma,"Microsoft YaHei","WenQuanYi Micro Hei", SimSun,"Songti SC",STFangsong, "Songti SC", "Microsoft YaHei", STXihei, Heiti,sans-serif;
-	font-size: 18pt;
+	font-size: 17pt;
 	padding-top: 0px;
 	max-width: 110%p;
 	min-width: 700px;

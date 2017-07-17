@@ -1,0 +1,3934 @@
+<!doctype html>
+<html lang="en">
+<head>
+<title></title>
+<!-- 2017-07-18 二 00:34 -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="generator" content="Org-mode">
+<meta name="author" content="eitazhou">
+
+<link  href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/js/bootstrap.min.js"></script>
+<style type="text/css">
+/* org mode styles on top of twbs */
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    font-size: 18px;
+    margin-bottom: 105px;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 101px;
+    background-color: #f5f5f5;
+}
+
+footer > div {
+    padding: 10px;
+}
+
+footer p {
+    margin: 0 0 5px;
+    text-align: center;
+    font-size: 16px;
+}
+
+#table-of-contents {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+blockquote p {
+    font-size: 18px;
+}
+
+pre {
+    font-size: 16px;
+}
+
+.footpara {
+    display: inline-block;
+}
+
+figcaption {
+  font-size: 16px;
+  color: #666;
+  font-style: italic;
+  padding-bottom: 15px;
+}
+
+/* from twbs docs */
+
+.bs-docs-sidebar.affix {
+    position: static;
+}
+@media (min-width: 768px) {
+    .bs-docs-sidebar {
+        padding-left: 20px;
+    }
+}
+
+/* All levels of nav */
+.bs-docs-sidebar .nav > li > a {
+    display: block;
+    padding: 4px 20px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #999;
+}
+.bs-docs-sidebar .nav > li > a:hover,
+.bs-docs-sidebar .nav > li > a:focus {
+    padding-left: 19px;
+    color: #A1283B;
+    text-decoration: none;
+    background-color: transparent;
+    border-left: 1px solid #A1283B;
+}
+.bs-docs-sidebar .nav > .active > a,
+.bs-docs-sidebar .nav > .active:hover > a,
+.bs-docs-sidebar .nav > .active:focus > a {
+    padding-left: 18px;
+    font-weight: bold;
+    color: #A1283B;
+    background-color: transparent;
+    border-left: 2px solid #A1283B;
+}
+
+/* Nav: second level (shown on .active) */
+.bs-docs-sidebar .nav .nav {
+    display: none; /* Hide by default, but at >768px, show it */
+    padding-bottom: 10px;
+}
+.bs-docs-sidebar .nav .nav > li > a {
+    padding-top: 1px;
+    padding-bottom: 1px;
+    padding-left: 30px;
+    font-size: 12px;
+    font-weight: normal;
+}
+.bs-docs-sidebar .nav .nav > li > a:hover,
+.bs-docs-sidebar .nav .nav > li > a:focus {
+    padding-left: 29px;
+}
+.bs-docs-sidebar .nav .nav > .active > a,
+.bs-docs-sidebar .nav .nav > .active:hover > a,
+.bs-docs-sidebar .nav .nav > .active:focus > a {
+    padding-left: 28px;
+    font-weight: 500;
+}
+
+/* Nav: third level (shown on .active) */
+.bs-docs-sidebar .nav .nav .nav {
+    padding-bottom: 10px;
+}
+.bs-docs-sidebar .nav .nav .nav > li > a {
+    padding-top: 1px;
+    padding-bottom: 1px;
+    padding-left: 40px;
+    font-size: 12px;
+    font-weight: normal;
+}
+.bs-docs-sidebar .nav .nav .nav > li > a:hover,
+.bs-docs-sidebar .nav .nav .nav > li > a:focus {
+    padding-left: 39px;
+}
+.bs-docs-sidebar .nav .nav .nav > .active > a,
+.bs-docs-sidebar .nav .nav .nav > .active:hover > a,
+.bs-docs-sidebar .nav .nav .nav > .active:focus > a {
+    padding-left: 38px;
+    font-weight: 500;
+}
+
+/* Show and affix the side nav when space allows it */
+@media (min-width: 992px) {
+    .bs-docs-sidebar .nav > .active > ul {
+        display: block;
+    }
+    /* Widen the fixed sidebar */
+    .bs-docs-sidebar.affix,
+    .bs-docs-sidebar.affix-bottom {
+        width: 213px;
+    }
+    .bs-docs-sidebar.affix {
+        position: fixed; /* Undo the static from mobile first approach */
+        top: 20px;
+    }
+    .bs-docs-sidebar.affix-bottom {
+        position: absolute; /* Undo the static from mobile first approach */
+    }
+    .bs-docs-sidebar.affix .bs-docs-sidenav,.bs-docs-sidebar.affix-bottom .bs-docs-sidenav {
+        margin-top: 0;
+        margin-bottom: 0
+    }
+}
+@media (min-width: 1200px) {
+    /* Widen the fixed sidebar again */
+    .bs-docs-sidebar.affix-bottom,
+    .bs-docs-sidebar.affix {
+        width: 263px;
+    }
+}
+</style>
+<script type="text/javascript">
+$(function() {
+    'use strict';
+
+    $('.bs-docs-sidebar li').first().addClass('active');
+
+    $(document.body).scrollspy({target: '.bs-docs-sidebar'});
+
+    $('.bs-docs-sidebar').affix();
+});
+</script>
+</head>
+<body>
+<div id="content" class="container">
+<div class="row"><div class="col-md-9"><h1 class="title"></h1>
+<div id="outline-container-sec-" class="outline-2">
+<h2 id="sec-">唐诗</h2>
+<div class="outline-text-2" id="text-">
+</div><div id="outline-container-sec-" class="outline-3">
+<h3 id="sec-">唐诗、宋词两字词频比较</h3>
+<div class="outline-text-3" id="text-">
+<table class="table table-striped table-bordered table-hover table-condensed">
+
+
+<colgroup>
+<col  class="right">
+
+<col  class="left">
+
+<col  class="right">
+
+<col  class="left">
+
+<col  class="right">
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="text-right">&#xa0;</th>
+<th scope="col" class="text-left">唐诗</th>
+<th scope="col" class="text-right">词频</th>
+<th scope="col" class="text-left">宋词</th>
+<th scope="col" class="text-right">词频</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="text-right">1</td>
+<td class="text-left">何处</td>
+<td class="text-right">1838</td>
+<td class="text-left">东风</td>
+<td class="text-right">1470</td>
+</tr>
+
+<tr>
+<td class="text-right">2</td>
+<td class="text-left">不知</td>
+<td class="text-right">1584</td>
+<td class="text-left">人间</td>
+<td class="text-right">1277</td>
+</tr>
+
+<tr>
+<td class="text-right">3</td>
+<td class="text-left">万里</td>
+<td class="text-right">1576</td>
+<td class="text-left">何处</td>
+<td class="text-right">1266</td>
+</tr>
+
+<tr>
+<td class="text-right">4</td>
+<td class="text-left">千里</td>
+<td class="text-right">1410</td>
+<td class="text-left">风流</td>
+<td class="text-right">894</td>
+</tr>
+
+<tr>
+<td class="text-right">5</td>
+<td class="text-left">今日</td>
+<td class="text-right">1281</td>
+<td class="text-left">归去</td>
+<td class="text-right">880</td>
+</tr>
+
+<tr>
+<td class="text-right">6</td>
+<td class="text-left">不可</td>
+<td class="text-right">1248</td>
+<td class="text-left">春风</td>
+<td class="text-right">872</td>
+</tr>
+
+<tr>
+<td class="text-right">7</td>
+<td class="text-left">不见</td>
+<td class="text-right">1227</td>
+<td class="text-left">西风</td>
+<td class="text-right">831</td>
+</tr>
+
+<tr>
+<td class="text-right">8</td>
+<td class="text-left">春风</td>
+<td class="text-right">1225</td>
+<td class="text-left">归来</td>
+<td class="text-right">823</td>
+</tr>
+
+<tr>
+<td class="text-right">9</td>
+<td class="text-left">白云</td>
+<td class="text-right">1215</td>
+<td class="text-left">相思</td>
+<td class="text-right">784</td>
+</tr>
+
+<tr>
+<td class="text-right">10</td>
+<td class="text-left">不得</td>
+<td class="text-right">1044</td>
+<td class="text-left">梅花</td>
+<td class="text-right">778</td>
+</tr>
+
+<tr>
+<td class="text-right">11</td>
+<td class="text-left">明月</td>
+<td class="text-right">995</td>
+<td class="text-left">江南</td>
+<td class="text-right">776</td>
+</tr>
+
+<tr>
+<td class="text-right">12</td>
+<td class="text-left">人间</td>
+<td class="text-right">976</td>
+<td class="text-left">如今</td>
+<td class="text-right">714</td>
+</tr>
+
+<tr>
+<td class="text-right">13</td>
+<td class="text-left">无人</td>
+<td class="text-right">974</td>
+<td class="text-left">多少</td>
+<td class="text-right">707</td>
+</tr>
+
+<tr>
+<td class="text-right">14</td>
+<td class="text-left">风吹</td>
+<td class="text-right">897</td>
+<td class="text-left">千里</td>
+<td class="text-right">703</td>
+</tr>
+
+<tr>
+<td class="text-right">15</td>
+<td class="text-left">故人</td>
+<td class="text-right">857</td>
+<td class="text-left">回首</td>
+<td class="text-right">696</td>
+</tr>
+
+<tr>
+<td class="text-right">16</td>
+<td class="text-left">惆怅</td>
+<td class="text-right">843</td>
+<td class="text-left">明月</td>
+<td class="text-right">685</td>
+</tr>
+
+<tr>
+<td class="text-right">17</td>
+<td class="text-left">秋风</td>
+<td class="text-right">814</td>
+<td class="text-left">阑干</td>
+<td class="text-right">658</td>
+</tr>
+
+<tr>
+<td class="text-right">18</td>
+<td class="text-left">相思</td>
+<td class="text-right">802</td>
+<td class="text-left">年年</td>
+<td class="text-right">632</td>
+</tr>
+
+<tr>
+<td class="text-right">19</td>
+<td class="text-left">长安</td>
+<td class="text-right">796</td>
+<td class="text-left">一笑</td>
+<td class="text-right">631</td>
+</tr>
+
+<tr>
+<td class="text-right">20</td>
+<td class="text-left">悠悠</td>
+<td class="text-right">788</td>
+<td class="text-left">万里</td>
+<td class="text-right">614</td>
+</tr>
+
+<tr>
+<td class="text-right">21</td>
+<td class="text-left">如何</td>
+<td class="text-right">752</td>
+<td class="text-left">风吹</td>
+<td class="text-right">574</td>
+</tr>
+
+<tr>
+<td class="text-right">22</td>
+<td class="text-left">白日</td>
+<td class="text-right">751</td>
+<td class="text-left">天涯</td>
+<td class="text-right">564</td>
+</tr>
+
+<tr>
+<td class="text-right">23</td>
+<td class="text-left">何人</td>
+<td class="text-right">732</td>
+<td class="text-left">相逢</td>
+<td class="text-right">558</td>
+</tr>
+
+<tr>
+<td class="text-right">24</td>
+<td class="text-left">青山</td>
+<td class="text-right">730</td>
+<td class="text-left">风雨</td>
+<td class="text-right">547</td>
+</tr>
+
+<tr>
+<td class="text-right">25</td>
+<td class="text-left">十年</td>
+<td class="text-right">724</td>
+<td class="text-left">芳草</td>
+<td class="text-right">547</td>
+</tr>
+
+<tr>
+<td class="text-right">26</td>
+<td class="text-left">少年</td>
+<td class="text-right">699</td>
+<td class="text-left">黄昏</td>
+<td class="text-right">547</td>
+</tr>
+
+<tr>
+<td class="text-right">27</td>
+<td class="text-left">相逢</td>
+<td class="text-right">683</td>
+<td class="text-left">当年</td>
+<td class="text-right">541</td>
+</tr>
+
+<tr>
+<td class="text-right">28</td>
+<td class="text-left">人不</td>
+<td class="text-right">674</td>
+<td class="text-left">尊前</td>
+<td class="text-right">532</td>
+</tr>
+
+<tr>
+<td class="text-right">29</td>
+<td class="text-left">平生</td>
+<td class="text-right">653</td>
+<td class="text-left">依旧</td>
+<td class="text-right">512</td>
+</tr>
+
+<tr>
+<td class="text-right">30</td>
+<td class="text-left">天子</td>
+<td class="text-right">653</td>
+<td class="text-left">流水</td>
+<td class="text-right">495</td>
+</tr>
+
+<tr>
+<td class="text-right">31</td>
+<td class="text-left">天地</td>
+<td class="text-right">651</td>
+<td class="text-left">风月</td>
+<td class="text-right">492</td>
+</tr>
+
+<tr>
+<td class="text-right">32</td>
+<td class="text-left">寂寞</td>
+<td class="text-right">639</td>
+<td class="text-left">多情</td>
+<td class="text-right">479</td>
+</tr>
+
+<tr>
+<td class="text-right">33</td>
+<td class="text-left">何事</td>
+<td class="text-right">633</td>
+<td class="text-left">当时</td>
+<td class="text-right">478</td>
+</tr>
+
+<tr>
+<td class="text-right">34</td>
+<td class="text-left">年年</td>
+<td class="text-right">629</td>
+<td class="text-left">无人</td>
+<td class="text-right">471</td>
+</tr>
+
+<tr>
+<td class="text-right">35</td>
+<td class="text-left">黄金</td>
+<td class="text-right">621</td>
+<td class="text-left">不见</td>
+<td class="text-right">466</td>
+</tr>
+
+<tr>
+<td class="text-right">36</td>
+<td class="text-left">江上</td>
+<td class="text-right">602</td>
+<td class="text-left">一枝</td>
+<td class="text-right">464</td>
+</tr>
+
+<tr>
+<td class="text-right">37</td>
+<td class="text-left">回首</td>
+<td class="text-right">599</td>
+<td class="text-left">斜阳</td>
+<td class="text-right">463</td>
+</tr>
+
+<tr>
+<td class="text-right">38</td>
+<td class="text-left">可怜</td>
+<td class="text-right">584</td>
+<td class="text-left">不知</td>
+<td class="text-right">463</td>
+</tr>
+
+<tr>
+<td class="text-right">39</td>
+<td class="text-left">流水</td>
+<td class="text-right">582</td>
+<td class="text-left">故人</td>
+<td class="text-right">461</td>
+</tr>
+
+<tr>
+<td class="text-right">40</td>
+<td class="text-left">主人</td>
+<td class="text-right">572</td>
+<td class="text-left">深处</td>
+<td class="text-right">427</td>
+</tr>
+
+<tr>
+<td class="text-right">41</td>
+<td class="text-left">白发</td>
+<td class="text-right">566</td>
+<td class="text-left">时节</td>
+<td class="text-right">420</td>
+</tr>
+
+<tr>
+<td class="text-right">42</td>
+<td class="text-left">如此</td>
+<td class="text-right">565</td>
+<td class="text-left">平生</td>
+<td class="text-right">415</td>
+</tr>
+
+<tr>
+<td class="text-right">43</td>
+<td class="text-left">日月</td>
+<td class="text-right">558</td>
+<td class="text-left">凄凉</td>
+<td class="text-right">410</td>
+</tr>
+
+<tr>
+<td class="text-right">44</td>
+<td class="text-left">行人</td>
+<td class="text-right">558</td>
+<td class="text-left">匆匆</td>
+<td class="text-right">408</td>
+</tr>
+
+<tr>
+<td class="text-right">45</td>
+<td class="text-left">落日</td>
+<td class="text-right">556</td>
+<td class="text-left">无限</td>
+<td class="text-right">402</td>
+</tr>
+
+<tr>
+<td class="text-right">46</td>
+<td class="text-left">从此</td>
+<td class="text-right">552</td>
+<td class="text-left">春色</td>
+<td class="text-right">397</td>
+</tr>
+
+<tr>
+<td class="text-right">47</td>
+<td class="text-left">月明</td>
+<td class="text-right">552</td>
+<td class="text-left">天上</td>
+<td class="text-right">390</td>
+</tr>
+
+<tr>
+<td class="text-right">48</td>
+<td class="text-left">归去</td>
+<td class="text-right">546</td>
+<td class="text-left">功名</td>
+<td class="text-right">389</td>
+</tr>
+
+<tr>
+<td class="text-right">49</td>
+<td class="text-left">天下</td>
+<td class="text-right">546</td>
+<td class="text-left">扁舟</td>
+<td class="text-right">386</td>
+</tr>
+
+<tr>
+<td class="text-right">50</td>
+<td class="text-left">不如</td>
+<td class="text-right">545</td>
+<td class="text-left">一点</td>
+<td class="text-right">383</td>
+</tr>
+
+<tr>
+<td class="text-right">51</td>
+<td class="text-left">今朝</td>
+<td class="text-right">545</td>
+<td class="text-left">今日</td>
+<td class="text-right">383</td>
+</tr>
+
+<tr>
+<td class="text-right">52</td>
+<td class="text-left">日暮</td>
+<td class="text-right">535</td>
+<td class="text-left">杨柳</td>
+<td class="text-right">374</td>
+</tr>
+
+<tr>
+<td class="text-right">53</td>
+<td class="text-left">将军</td>
+<td class="text-right">535</td>
+<td class="text-left">西湖</td>
+<td class="text-right">374</td>
+</tr>
+
+<tr>
+<td class="text-right">54</td>
+<td class="text-left">归来</td>
+<td class="text-right">524</td>
+<td class="text-left">何事</td>
+<td class="text-right">372</td>
+</tr>
+
+<tr>
+<td class="text-right">55</td>
+<td class="text-left">洛阳</td>
+<td class="text-right">519</td>
+<td class="text-left">桃花</td>
+<td class="text-right">370</td>
+</tr>
+
+<tr>
+<td class="text-right">56</td>
+<td class="text-left">别离</td>
+<td class="text-right">519</td>
+<td class="text-left">憔悴</td>
+<td class="text-right">365</td>
+</tr>
+
+<tr>
+<td class="text-right">57</td>
+<td class="text-left">芳草</td>
+<td class="text-right">518</td>
+<td class="text-left">黄花</td>
+<td class="text-right">357</td>
+</tr>
+
+<tr>
+<td class="text-right">58</td>
+<td class="text-left">不能</td>
+<td class="text-right">518</td>
+<td class="text-left">人生</td>
+<td class="text-right">355</td>
+</tr>
+
+<tr>
+<td class="text-right">59</td>
+<td class="text-left">夕阳</td>
+<td class="text-right">518</td>
+<td class="text-left">一片</td>
+<td class="text-right">355</td>
+</tr>
+
+<tr>
+<td class="text-right">60</td>
+<td class="text-left">无事</td>
+<td class="text-right">517</td>
+<td class="text-left">消息</td>
+<td class="text-right">350</td>
+</tr>
+
+<tr>
+<td class="text-right">61</td>
+<td class="text-left">此时</td>
+<td class="text-right">515</td>
+<td class="text-left">十分</td>
+<td class="text-right">348</td>
+</tr>
+
+<tr>
+<td class="text-right">62</td>
+<td class="text-left">何时</td>
+<td class="text-right">514</td>
+<td class="text-left">心事</td>
+<td class="text-right">347</td>
+</tr>
+
+<tr>
+<td class="text-right">63</td>
+<td class="text-left">相见</td>
+<td class="text-right">504</td>
+<td class="text-left">神仙</td>
+<td class="text-right">343</td>
+</tr>
+
+<tr>
+<td class="text-right">64</td>
+<td class="text-left">当时</td>
+<td class="text-right">501</td>
+<td class="text-left">芙蓉</td>
+<td class="text-right">342</td>
+</tr>
+
+<tr>
+<td class="text-right">65</td>
+<td class="text-left">风雨</td>
+<td class="text-right">493</td>
+<td class="text-left">一声</td>
+<td class="text-right">340</td>
+</tr>
+
+<tr>
+<td class="text-right">66</td>
+<td class="text-left">青云</td>
+<td class="text-right">490</td>
+<td class="text-left">肠断</td>
+<td class="text-right">335</td>
+</tr>
+
+<tr>
+<td class="text-right">67</td>
+<td class="text-left">天涯</td>
+<td class="text-right">487</td>
+<td class="text-left">桃李</td>
+<td class="text-right">335</td>
+</tr>
+
+<tr>
+<td class="text-right">68</td>
+<td class="text-left">杨柳</td>
+<td class="text-right">485</td>
+<td class="text-left">富贵</td>
+<td class="text-right">332</td>
+</tr>
+
+<tr>
+<td class="text-right">69</td>
+<td class="text-left">江南</td>
+<td class="text-right">479</td>
+<td class="text-left">十年</td>
+<td class="text-right">332</td>
+</tr>
+
+<tr>
+<td class="text-right">70</td>
+<td class="text-left">清风</td>
+<td class="text-right">471</td>
+<td class="text-left">断肠</td>
+<td class="text-right">332</td>
+</tr>
+
+<tr>
+<td class="text-right">71</td>
+<td class="text-left">洞庭</td>
+<td class="text-right">470</td>
+<td class="text-left">而今</td>
+<td class="text-right">331</td>
+</tr>
+
+<tr>
+<td class="text-right">72</td>
+<td class="text-left">东风</td>
+<td class="text-right">469</td>
+<td class="text-left">长安</td>
+<td class="text-right">328</td>
+</tr>
+
+<tr>
+<td class="text-right">73</td>
+<td class="text-left">参差</td>
+<td class="text-right">467</td>
+<td class="text-left">去年</td>
+<td class="text-right">327</td>
+</tr>
+
+<tr>
+<td class="text-right">74</td>
+<td class="text-left">芙蓉</td>
+<td class="text-right">463</td>
+<td class="text-left">佳人</td>
+<td class="text-right">324</td>
+</tr>
+
+<tr>
+<td class="text-right">75</td>
+<td class="text-left">不是</td>
+<td class="text-right">459</td>
+<td class="text-left">不是</td>
+<td class="text-right">324</td>
+</tr>
+
+<tr>
+<td class="text-right">76</td>
+<td class="text-left">花落</td>
+<td class="text-right">459</td>
+<td class="text-left">少年</td>
+<td class="text-right">323</td>
+</tr>
+
+<tr>
+<td class="text-right">77</td>
+<td class="text-left">烟霞</td>
+<td class="text-right">458</td>
+<td class="text-left">何时</td>
+<td class="text-right">322</td>
+</tr>
+
+<tr>
+<td class="text-right">78</td>
+<td class="text-left">三十</td>
+<td class="text-right">457</td>
+<td class="text-left">江上</td>
+<td class="text-right">321</td>
+</tr>
+
+<tr>
+<td class="text-right">79</td>
+<td class="text-left">落花</td>
+<td class="text-right">452</td>
+<td class="text-left">谁知</td>
+<td class="text-right">319</td>
+</tr>
+
+<tr>
+<td class="text-right">80</td>
+<td class="text-left">唯有</td>
+<td class="text-right">452</td>
+<td class="text-left">悠悠</td>
+<td class="text-right">319</td>
+</tr>
+
+<tr>
+<td class="text-right">81</td>
+<td class="text-left">不相</td>
+<td class="text-right">449</td>
+<td class="text-left">无情</td>
+<td class="text-right">318</td>
+</tr>
+
+<tr>
+<td class="text-right">82</td>
+<td class="text-left">何如</td>
+<td class="text-right">444</td>
+<td class="text-left">鸳鸯</td>
+<td class="text-right">318</td>
+</tr>
+
+<tr>
+<td class="text-right">83</td>
+<td class="text-left">谁能</td>
+<td class="text-right">440</td>
+<td class="text-left">为谁</td>
+<td class="text-right">317</td>
+</tr>
+
+<tr>
+<td class="text-right">84</td>
+<td class="text-left">南山</td>
+<td class="text-right">440</td>
+<td class="text-left">不似</td>
+<td class="text-right">317</td>
+</tr>
+
+<tr>
+<td class="text-right">85</td>
+<td class="text-left">白头</td>
+<td class="text-right">438</td>
+<td class="text-left">青山</td>
+<td class="text-right">317</td>
+</tr>
+
+<tr>
+<td class="text-right">86</td>
+<td class="text-left">如今</td>
+<td class="text-right">434</td>
+<td class="text-left">今夜</td>
+<td class="text-right">317</td>
+</tr>
+
+<tr>
+<td class="text-right">87</td>
+<td class="text-left">桃花</td>
+<td class="text-right">434</td>
+<td class="text-left">海棠</td>
+<td class="text-right">313</td>
+</tr>
+
+<tr>
+<td class="text-right">88</td>
+<td class="text-left">君不</td>
+<td class="text-right">432</td>
+<td class="text-left">行人</td>
+<td class="text-right">313</td>
+</tr>
+
+<tr>
+<td class="text-right">89</td>
+<td class="text-left">天上</td>
+<td class="text-right">432</td>
+<td class="text-left">时候</td>
+<td class="text-right">312</td>
+</tr>
+
+<tr>
+<td class="text-right">90</td>
+<td class="text-left">殷勤</td>
+<td class="text-right">429</td>
+<td class="text-left">往事</td>
+<td class="text-right">312</td>
+</tr>
+
+<tr>
+<td class="text-right">91</td>
+<td class="text-left">千年</td>
+<td class="text-right">427</td>
+<td class="text-left">惟有</td>
+<td class="text-right">312</td>
+</tr>
+
+<tr>
+<td class="text-right">92</td>
+<td class="text-left">门前</td>
+<td class="text-right">423</td>
+<td class="text-left">寂寞</td>
+<td class="text-right">310</td>
+</tr>
+
+<tr>
+<td class="text-right">93</td>
+<td class="text-left">此地</td>
+<td class="text-right">420</td>
+<td class="text-left">如何</td>
+<td class="text-right">309</td>
+</tr>
+
+<tr>
+<td class="text-right">94</td>
+<td class="text-left">终日</td>
+<td class="text-right">420</td>
+<td class="text-left">月明</td>
+<td class="text-right">309</td>
+</tr>
+
+<tr>
+<td class="text-right">95</td>
+<td class="text-left">花开</td>
+<td class="text-right">413</td>
+<td class="text-left">蓬莱</td>
+<td class="text-right">309</td>
+</tr>
+
+<tr>
+<td class="text-right">96</td>
+<td class="text-left">君王</td>
+<td class="text-right">412</td>
+<td class="text-left">一曲</td>
+<td class="text-right">304</td>
+</tr>
+
+<tr>
+<td class="text-right">97</td>
+<td class="text-left">山中</td>
+<td class="text-right">412</td>
+<td class="text-left">落花</td>
+<td class="text-right">301</td>
+</tr>
+
+<tr>
+<td class="text-right">98</td>
+<td class="text-left">与君</td>
+<td class="text-right">412</td>
+<td class="text-left">天气</td>
+<td class="text-right">299</td>
+</tr>
+
+<tr>
+<td class="text-right">99</td>
+<td class="text-left">苍苍</td>
+<td class="text-right">409</td>
+<td class="text-left">燕子</td>
+<td class="text-right">299</td>
+</tr>
+
+<tr>
+<td class="text-right">100</td>
+<td class="text-left">神仙</td>
+<td class="text-right">409</td>
+<td class="text-left">无数</td>
+<td class="text-right">299</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+
+
+
+
+
+
+
+<div id="outline-container-sec-" class="outline-3">
+<h3 id="sec-">加权词频</h3>
+<div class="outline-text-3" id="text-">
+<table class="table table-striped table-bordered table-hover table-condensed">
+
+
+<colgroup>
+<col  class="left">
+
+<col  class="right">
+</colgroup>
+<tbody>
+<tr>
+<td class="text-left">万里</td>
+<td class="text-right">1318.</td>
+</tr>
+
+<tr>
+<td class="text-left">不见</td>
+<td class="text-right">1089.</td>
+</tr>
+
+<tr>
+<td class="text-left">不知</td>
+<td class="text-right">1044.</td>
+</tr>
+
+<tr>
+<td class="text-left">春风</td>
+<td class="text-right">1006.</td>
+</tr>
+
+<tr>
+<td class="text-left">一作</td>
+<td class="text-right">992.2</td>
+</tr>
+
+<tr>
+<td class="text-left">何处</td>
+<td class="text-right">967.7</td>
+</tr>
+
+<tr>
+<td class="text-left">明月</td>
+<td class="text-right">963.1</td>
+</tr>
+
+<tr>
+<td class="text-left">无人</td>
+<td class="text-right">808.6</td>
+</tr>
+
+<tr>
+<td class="text-left">不可</td>
+<td class="text-right">794.5</td>
+</tr>
+
+<tr>
+<td class="text-left">千里</td>
+<td class="text-right">775.6</td>
+</tr>
+
+<tr>
+<td class="text-left">不得</td>
+<td class="text-right">770.1</td>
+</tr>
+
+<tr>
+<td class="text-left">风吹</td>
+<td class="text-right">746.5</td>
+</tr>
+
+<tr>
+<td class="text-left">今日</td>
+<td class="text-right">706.2</td>
+</tr>
+
+<tr>
+<td class="text-left">白云</td>
+<td class="text-right">703.7</td>
+</tr>
+
+<tr>
+<td class="text-left">白日</td>
+<td class="text-right">687.9</td>
+</tr>
+
+<tr>
+<td class="text-left">悠悠</td>
+<td class="text-right">625.3</td>
+</tr>
+
+<tr>
+<td class="text-left">天地</td>
+<td class="text-right">589.3</td>
+</tr>
+
+<tr>
+<td class="text-left">长安</td>
+<td class="text-right">583.0</td>
+</tr>
+
+<tr>
+<td class="text-left">君不</td>
+<td class="text-right">567.9</td>
+</tr>
+
+<tr>
+<td class="text-left">人间</td>
+<td class="text-right">559.5</td>
+</tr>
+
+<tr>
+<td class="text-left">人不</td>
+<td class="text-right">558.7</td>
+</tr>
+
+<tr>
+<td class="text-left">黄金</td>
+<td class="text-right">549.9</td>
+</tr>
+
+<tr>
+<td class="text-left">秋风</td>
+<td class="text-right">536.6</td>
+</tr>
+
+<tr>
+<td class="text-left">可怜</td>
+<td class="text-right">520.4</td>
+</tr>
+
+<tr>
+<td class="text-left">桃花</td>
+<td class="text-right">510.9</td>
+</tr>
+
+<tr>
+<td class="text-left">东风</td>
+<td class="text-right">489.0</td>
+</tr>
+
+<tr>
+<td class="text-left">相思</td>
+<td class="text-right">463.9</td>
+</tr>
+
+<tr>
+<td class="text-left">桃李</td>
+<td class="text-right">463.4</td>
+</tr>
+
+<tr>
+<td class="text-left">浮云</td>
+<td class="text-right">462.8</td>
+</tr>
+
+<tr>
+<td class="text-left">将军</td>
+<td class="text-right">459.8</td>
+</tr>
+
+<tr>
+<td class="text-left">芙蓉</td>
+<td class="text-right">457.7</td>
+</tr>
+
+<tr>
+<td class="text-left">十年</td>
+<td class="text-right">455.8</td>
+</tr>
+
+<tr>
+<td class="text-left">鸳鸯</td>
+<td class="text-right">453.6</td>
+</tr>
+
+<tr>
+<td class="text-left">行人</td>
+<td class="text-right">452.1</td>
+</tr>
+
+<tr>
+<td class="text-left">日暮</td>
+<td class="text-right">451.9</td>
+</tr>
+
+<tr>
+<td class="text-left">美人</td>
+<td class="text-right">451.6</td>
+</tr>
+
+<tr>
+<td class="text-left">如此</td>
+<td class="text-right">443.3</td>
+</tr>
+
+<tr>
+<td class="text-left">归来</td>
+<td class="text-right">435.0</td>
+</tr>
+
+<tr>
+<td class="text-left">流水</td>
+<td class="text-right">434.1</td>
+</tr>
+
+<tr>
+<td class="text-left">落花</td>
+<td class="text-right">431.6</td>
+</tr>
+
+<tr>
+<td class="text-left">青天</td>
+<td class="text-right">421.3</td>
+</tr>
+
+<tr>
+<td class="text-left">年年</td>
+<td class="text-right">417.8</td>
+</tr>
+
+<tr>
+<td class="text-left">洞庭</td>
+<td class="text-right">408.3</td>
+</tr>
+
+<tr>
+<td class="text-left">洛阳</td>
+<td class="text-right">399.1</td>
+</tr>
+
+<tr>
+<td class="text-left">三十</td>
+<td class="text-right">391.8</td>
+</tr>
+
+<tr>
+<td class="text-left">少年</td>
+<td class="text-right">389.6</td>
+</tr>
+
+<tr>
+<td class="text-left">不如</td>
+<td class="text-right">386.6</td>
+</tr>
+
+<tr>
+<td class="text-left">寒山</td>
+<td class="text-right">385.5</td>
+</tr>
+
+<tr>
+<td class="text-left">青山</td>
+<td class="text-right">385.2</td>
+</tr>
+
+<tr>
+<td class="text-left">月明</td>
+<td class="text-right">383.5</td>
+</tr>
+
+<tr>
+<td class="text-left">如何</td>
+<td class="text-right">383.3</td>
+</tr>
+
+<tr>
+<td class="text-left">谁家</td>
+<td class="text-right">383.0</td>
+</tr>
+
+<tr>
+<td class="text-left">落日</td>
+<td class="text-right">381.2</td>
+</tr>
+
+<tr>
+<td class="text-left">天涯</td>
+<td class="text-right">375.5</td>
+</tr>
+
+<tr>
+<td class="text-left">故人</td>
+<td class="text-right">370.3</td>
+</tr>
+
+<tr>
+<td class="text-left">别离</td>
+<td class="text-right">368.3</td>
+</tr>
+
+<tr>
+<td class="text-left">江上</td>
+<td class="text-right">364.8</td>
+</tr>
+
+<tr>
+<td class="text-left">日月</td>
+<td class="text-right">363.5</td>
+</tr>
+
+<tr>
+<td class="text-left">人生</td>
+<td class="text-right">362.3</td>
+</tr>
+
+<tr>
+<td class="text-left">惆怅</td>
+<td class="text-right">361.1</td>
+</tr>
+
+<tr>
+<td class="text-left">与君</td>
+<td class="text-right">348.3</td>
+</tr>
+
+<tr>
+<td class="text-left">相逢</td>
+<td class="text-right">347.6</td>
+</tr>
+
+<tr>
+<td class="text-left">寂寞</td>
+<td class="text-right">345.8</td>
+</tr>
+
+<tr>
+<td class="text-left">一夜</td>
+<td class="text-right">342.2</td>
+</tr>
+
+<tr>
+<td class="text-left">不能</td>
+<td class="text-right">341.3</td>
+</tr>
+
+<tr>
+<td class="text-left">花落</td>
+<td class="text-right">340.0</td>
+</tr>
+
+<tr>
+<td class="text-left">不相</td>
+<td class="text-right">334.6</td>
+</tr>
+
+<tr>
+<td class="text-left">天下</td>
+<td class="text-right">334.1</td>
+</tr>
+
+<tr>
+<td class="text-left">天子</td>
+<td class="text-right">332.3</td>
+</tr>
+
+<tr>
+<td class="text-left">白发</td>
+<td class="text-right">329.3</td>
+</tr>
+
+<tr>
+<td class="text-left">花开</td>
+<td class="text-right">328.1</td>
+</tr>
+
+<tr>
+<td class="text-left">黄河</td>
+<td class="text-right">324.0</td>
+</tr>
+
+<tr>
+<td class="text-left">何人</td>
+<td class="text-right">320.8</td>
+</tr>
+
+<tr>
+<td class="text-left">杨柳</td>
+<td class="text-right">316.8</td>
+</tr>
+
+<tr>
+<td class="text-left">借问</td>
+<td class="text-right">316.1</td>
+</tr>
+
+<tr>
+<td class="text-left">纷纷</td>
+<td class="text-right">315.5</td>
+</tr>
+
+<tr>
+<td class="text-left">二十</td>
+<td class="text-right">314.3</td>
+</tr>
+
+<tr>
+<td class="text-left">何事</td>
+<td class="text-right">313.9</td>
+</tr>
+
+<tr>
+<td class="text-left">江南</td>
+<td class="text-right">311.2</td>
+</tr>
+
+<tr>
+<td class="text-left">不敢</td>
+<td class="text-right">310.6</td>
+</tr>
+
+<tr>
+<td class="text-left">江水</td>
+<td class="text-right">309.9</td>
+</tr>
+
+<tr>
+<td class="text-left">何时</td>
+<td class="text-right">308.1</td>
+</tr>
+
+<tr>
+<td class="text-left">此时</td>
+<td class="text-right">308.0</td>
+</tr>
+
+<tr>
+<td class="text-left">无限</td>
+<td class="text-right">303.5</td>
+</tr>
+
+<tr>
+<td class="text-left">何所</td>
+<td class="text-right">303.5</td>
+</tr>
+
+<tr>
+<td class="text-left">今朝</td>
+<td class="text-right">303.1</td>
+</tr>
+
+<tr>
+<td class="text-left">凤凰</td>
+<td class="text-right">301.0</td>
+</tr>
+
+<tr>
+<td class="text-left">君王</td>
+<td class="text-right">297.3</td>
+</tr>
+
+<tr>
+<td class="text-left">回首</td>
+<td class="text-right">296.7</td>
+</tr>
+
+<tr>
+<td class="text-left">处处</td>
+<td class="text-right">296.1</td>
+</tr>
+
+<tr>
+<td class="text-left">春色</td>
+<td class="text-right">295.9</td>
+</tr>
+
+<tr>
+<td class="text-left">相见</td>
+<td class="text-right">294.6</td>
+</tr>
+
+<tr>
+<td class="text-left">风雨</td>
+<td class="text-right">294.3</td>
+</tr>
+
+<tr>
+<td class="text-left">归去</td>
+<td class="text-right">291.0</td>
+</tr>
+
+<tr>
+<td class="text-left">十二</td>
+<td class="text-right">290.3</td>
+</tr>
+
+<tr>
+<td class="text-left">神仙</td>
+<td class="text-right">288.8</td>
+</tr>
+
+<tr>
+<td class="text-left">不归</td>
+<td class="text-right">287.1</td>
+</tr>
+
+<tr>
+<td class="text-left">天上</td>
+<td class="text-right">286.8</td>
+</tr>
+
+<tr>
+<td class="text-left">东流</td>
+<td class="text-right">286.5</td>
+</tr>
+
+<tr>
+<td class="text-left">昨夜</td>
+<td class="text-right">285.4</td>
+</tr>
+
+<tr>
+<td class="text-left">平生</td>
+<td class="text-right">283.6</td>
+</tr>
+
+<tr>
+<td class="text-left">青云</td>
+<td class="text-right">283.3</td>
+</tr>
+
+<tr>
+<td class="text-left">百年</td>
+<td class="text-right">278.5</td>
+</tr>
+
+<tr>
+<td class="text-left">故乡</td>
+<td class="text-right">276.9</td>
+</tr>
+
+<tr>
+<td class="text-left">茫茫</td>
+<td class="text-right">276.8</td>
+</tr>
+
+<tr>
+<td class="text-left">主人</td>
+<td class="text-right">275.6</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+
+
+<div id="outline-container-sec-" class="outline-2">
+<h2 id="sec-">宋词</h2>
+<div class="outline-text-2" id="text-">
+</div><div id="outline-container-sec-" class="outline-3">
+<h3 id="sec-">两字词频</h3>
+<div class="outline-text-3" id="text-">
+<table class="table table-striped table-bordered table-hover table-condensed">
+
+
+<colgroup>
+<col  class="left">
+
+<col  class="right">
+
+<col  class="left">
+
+<col  class="right">
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="text-left">无权重</th>
+<th scope="col" class="text-right">词频</th>
+<th scope="col" class="text-left">加权</th>
+<th scope="col" class="text-right">词频</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="text-left">东风</td>
+<td class="text-right">1470</td>
+<td class="text-left">何处</td>
+<td class="text-right">984.9</td>
+</tr>
+
+<tr>
+<td class="text-left">人间</td>
+<td class="text-right">1277</td>
+<td class="text-left">东风</td>
+<td class="text-right">823.4</td>
+</tr>
+
+<tr>
+<td class="text-left">何处</td>
+<td class="text-right">1266</td>
+<td class="text-left">相思</td>
+<td class="text-right">756.5</td>
+</tr>
+
+<tr>
+<td class="text-left">风流</td>
+<td class="text-right">894</td>
+<td class="text-left">人间</td>
+<td class="text-right">701.7</td>
+</tr>
+
+<tr>
+<td class="text-left">归去</td>
+<td class="text-right">880</td>
+<td class="text-left">西风</td>
+<td class="text-right">606.5</td>
+</tr>
+
+<tr>
+<td class="text-left">春风</td>
+<td class="text-right">872</td>
+<td class="text-left">江南</td>
+<td class="text-right">596.6</td>
+</tr>
+
+<tr>
+<td class="text-left">西风</td>
+<td class="text-right">831</td>
+<td class="text-left">黄昏</td>
+<td class="text-right">595.8</td>
+</tr>
+
+<tr>
+<td class="text-left">归来</td>
+<td class="text-right">823</td>
+<td class="text-left">万里</td>
+<td class="text-right">587.0</td>
+</tr>
+
+<tr>
+<td class="text-left">相思</td>
+<td class="text-right">784</td>
+<td class="text-left">不见</td>
+<td class="text-right">569.2</td>
+</tr>
+
+<tr>
+<td class="text-left">梅花</td>
+<td class="text-right">778</td>
+<td class="text-left">千里</td>
+<td class="text-right">558.8</td>
+</tr>
+
+<tr>
+<td class="text-left">江南</td>
+<td class="text-right">776</td>
+<td class="text-left">天涯</td>
+<td class="text-right">517.6</td>
+</tr>
+
+<tr>
+<td class="text-left">如今</td>
+<td class="text-right">714</td>
+<td class="text-left">多少</td>
+<td class="text-right">493.9</td>
+</tr>
+
+<tr>
+<td class="text-left">多少</td>
+<td class="text-right">707</td>
+<td class="text-left">风雨</td>
+<td class="text-right">490.2</td>
+</tr>
+
+<tr>
+<td class="text-left">千里</td>
+<td class="text-right">703</td>
+<td class="text-left">无人</td>
+<td class="text-right">484.2</td>
+</tr>
+
+<tr>
+<td class="text-left">回首</td>
+<td class="text-right">696</td>
+<td class="text-left">春风</td>
+<td class="text-right">480.3</td>
+</tr>
+
+<tr>
+<td class="text-left">明月</td>
+<td class="text-right">685</td>
+<td class="text-left">归去</td>
+<td class="text-right">478.1</td>
+</tr>
+
+<tr>
+<td class="text-left">阑干</td>
+<td class="text-right">658</td>
+<td class="text-left">回首</td>
+<td class="text-right">453.6</td>
+</tr>
+
+<tr>
+<td class="text-left">年年</td>
+<td class="text-right">632</td>
+<td class="text-left">明月</td>
+<td class="text-right">445.2</td>
+</tr>
+
+<tr>
+<td class="text-left">一笑</td>
+<td class="text-right">631</td>
+<td class="text-left">归来</td>
+<td class="text-right">444.1</td>
+</tr>
+
+<tr>
+<td class="text-left">万里</td>
+<td class="text-right">614</td>
+<td class="text-left">流水</td>
+<td class="text-right">440.9</td>
+</tr>
+
+<tr>
+<td class="text-left">风吹</td>
+<td class="text-right">574</td>
+<td class="text-left">斜阳</td>
+<td class="text-right">438.1</td>
+</tr>
+
+<tr>
+<td class="text-left">天涯</td>
+<td class="text-right">564</td>
+<td class="text-left">凄凉</td>
+<td class="text-right">434.2</td>
+</tr>
+
+<tr>
+<td class="text-left">相逢</td>
+<td class="text-right">558</td>
+<td class="text-left">风流</td>
+<td class="text-right">425.2</td>
+</tr>
+
+<tr>
+<td class="text-left">风雨</td>
+<td class="text-right">547</td>
+<td class="text-left">如今</td>
+<td class="text-right">420.1</td>
+</tr>
+
+<tr>
+<td class="text-left">芳草</td>
+<td class="text-right">547</td>
+<td class="text-left">阑干</td>
+<td class="text-right">419.3</td>
+</tr>
+
+<tr>
+<td class="text-left">黄昏</td>
+<td class="text-right">547</td>
+<td class="text-left">风吹</td>
+<td class="text-right">406.3</td>
+</tr>
+
+<tr>
+<td class="text-left">当年</td>
+<td class="text-right">541</td>
+<td class="text-left">相逢</td>
+<td class="text-right">404.3</td>
+</tr>
+
+<tr>
+<td class="text-left">尊前</td>
+<td class="text-right">532</td>
+<td class="text-left">芳草</td>
+<td class="text-right">393.7</td>
+</tr>
+
+<tr>
+<td class="text-left">依旧</td>
+<td class="text-right">512</td>
+<td class="text-left">年年</td>
+<td class="text-right">393.4</td>
+</tr>
+
+<tr>
+<td class="text-left">流水</td>
+<td class="text-right">495</td>
+<td class="text-left">不知</td>
+<td class="text-right">391.1</td>
+</tr>
+
+<tr>
+<td class="text-left">风月</td>
+<td class="text-right">492</td>
+<td class="text-left">梅花</td>
+<td class="text-right">375.9</td>
+</tr>
+
+<tr>
+<td class="text-left">多情</td>
+<td class="text-right">479</td>
+<td class="text-left">燕子</td>
+<td class="text-right">371.4</td>
+</tr>
+
+<tr>
+<td class="text-left">当时</td>
+<td class="text-right">478</td>
+<td class="text-left">当年</td>
+<td class="text-right">365.3</td>
+</tr>
+
+<tr>
+<td class="text-left">无人</td>
+<td class="text-right">471</td>
+<td class="text-left">尊前</td>
+<td class="text-right">364.9</td>
+</tr>
+
+<tr>
+<td class="text-left">不见</td>
+<td class="text-right">466</td>
+<td class="text-left">故人</td>
+<td class="text-right">364.3</td>
+</tr>
+
+<tr>
+<td class="text-left">一枝</td>
+<td class="text-right">464</td>
+<td class="text-left">当时</td>
+<td class="text-right">356.6</td>
+</tr>
+
+<tr>
+<td class="text-left">斜阳</td>
+<td class="text-right">463</td>
+<td class="text-left">杨柳</td>
+<td class="text-right">355.6</td>
+</tr>
+
+<tr>
+<td class="text-left">不知</td>
+<td class="text-right">463</td>
+<td class="text-left">落花</td>
+<td class="text-right">337.7</td>
+</tr>
+
+<tr>
+<td class="text-left">故人</td>
+<td class="text-right">461</td>
+<td class="text-left">匆匆</td>
+<td class="text-right">334.6</td>
+</tr>
+
+<tr>
+<td class="text-left">深处</td>
+<td class="text-right">427</td>
+<td class="text-left">依旧</td>
+<td class="text-right">333.2</td>
+</tr>
+
+<tr>
+<td class="text-left">时节</td>
+<td class="text-right">420</td>
+<td class="text-left">西湖</td>
+<td class="text-right">317.5</td>
+</tr>
+
+<tr>
+<td class="text-left">平生</td>
+<td class="text-right">415</td>
+<td class="text-left">憔悴</td>
+<td class="text-right">312.8</td>
+</tr>
+
+<tr>
+<td class="text-left">凄凉</td>
+<td class="text-right">410</td>
+<td class="text-left">多情</td>
+<td class="text-right">307.2</td>
+</tr>
+
+<tr>
+<td class="text-left">匆匆</td>
+<td class="text-right">408</td>
+<td class="text-left">一作</td>
+<td class="text-right">306.3</td>
+</tr>
+
+<tr>
+<td class="text-left">无限</td>
+<td class="text-right">402</td>
+<td class="text-left">时节</td>
+<td class="text-right">298.9</td>
+</tr>
+
+<tr>
+<td class="text-left">春色</td>
+<td class="text-right">397</td>
+<td class="text-left">寂寞</td>
+<td class="text-right">295.3</td>
+</tr>
+
+<tr>
+<td class="text-left">天上</td>
+<td class="text-right">390</td>
+<td class="text-left">而今</td>
+<td class="text-right">293.9</td>
+</tr>
+
+<tr>
+<td class="text-left">功名</td>
+<td class="text-right">389</td>
+<td class="text-left">梨花</td>
+<td class="text-right">290.4</td>
+</tr>
+
+<tr>
+<td class="text-left">扁舟</td>
+<td class="text-right">386</td>
+<td class="text-left">无情</td>
+<td class="text-right">287.8</td>
+</tr>
+
+<tr>
+<td class="text-left">一点</td>
+<td class="text-right">383</td>
+<td class="text-left">行人</td>
+<td class="text-right">280.3</td>
+</tr>
+
+<tr>
+<td class="text-left">今日</td>
+<td class="text-right">383</td>
+<td class="text-left">深处</td>
+<td class="text-right">280.3</td>
+</tr>
+
+<tr>
+<td class="text-left">杨柳</td>
+<td class="text-right">374</td>
+<td class="text-left">江上</td>
+<td class="text-right">276.5</td>
+</tr>
+
+<tr>
+<td class="text-left">西湖</td>
+<td class="text-right">374</td>
+<td class="text-left">清明</td>
+<td class="text-right">274.0</td>
+</tr>
+
+<tr>
+<td class="text-left">何事</td>
+<td class="text-right">372</td>
+<td class="text-left">长安</td>
+<td class="text-right">269.4</td>
+</tr>
+
+<tr>
+<td class="text-left">桃花</td>
+<td class="text-right">370</td>
+<td class="text-left">长亭</td>
+<td class="text-right">264.9</td>
+</tr>
+
+<tr>
+<td class="text-left">憔悴</td>
+<td class="text-right">365</td>
+<td class="text-left">一笑</td>
+<td class="text-right">264.6</td>
+</tr>
+
+<tr>
+<td class="text-left">黄花</td>
+<td class="text-right">357</td>
+<td class="text-left">何事</td>
+<td class="text-right">263.9</td>
+</tr>
+
+<tr>
+<td class="text-left">人生</td>
+<td class="text-right">355</td>
+<td class="text-left">平生</td>
+<td class="text-right">260.9</td>
+</tr>
+
+<tr>
+<td class="text-left">一片</td>
+<td class="text-right">355</td>
+<td class="text-left">思量</td>
+<td class="text-right">260.7</td>
+</tr>
+
+<tr>
+<td class="text-left">消息</td>
+<td class="text-right">350</td>
+<td class="text-left">几时</td>
+<td class="text-right">260.6</td>
+</tr>
+
+<tr>
+<td class="text-left">十分</td>
+<td class="text-right">348</td>
+<td class="text-left">酒醒</td>
+<td class="text-right">258.3</td>
+</tr>
+
+<tr>
+<td class="text-left">心事</td>
+<td class="text-right">347</td>
+<td class="text-left">少年</td>
+<td class="text-right">257.7</td>
+</tr>
+
+<tr>
+<td class="text-left">神仙</td>
+<td class="text-right">343</td>
+<td class="text-left">记得</td>
+<td class="text-right">257.4</td>
+</tr>
+
+<tr>
+<td class="text-left">芙蓉</td>
+<td class="text-right">342</td>
+<td class="text-left">悠悠</td>
+<td class="text-right">250.9</td>
+</tr>
+
+<tr>
+<td class="text-left">一声</td>
+<td class="text-right">340</td>
+<td class="text-left">楼上</td>
+<td class="text-right">248.8</td>
+</tr>
+
+<tr>
+<td class="text-left">肠断</td>
+<td class="text-right">335</td>
+<td class="text-left">萧萧</td>
+<td class="text-right">248.4</td>
+</tr>
+
+<tr>
+<td class="text-left">桃李</td>
+<td class="text-right">335</td>
+<td class="text-left">佳人</td>
+<td class="text-right">247.8</td>
+</tr>
+
+<tr>
+<td class="text-left">富贵</td>
+<td class="text-right">332</td>
+<td class="text-left">一声</td>
+<td class="text-right">245.0</td>
+</tr>
+
+<tr>
+<td class="text-left">十年</td>
+<td class="text-right">332</td>
+<td class="text-left">断肠</td>
+<td class="text-right">244.2</td>
+</tr>
+
+<tr>
+<td class="text-left">断肠</td>
+<td class="text-right">332</td>
+<td class="text-left">去年</td>
+<td class="text-right">241.7</td>
+</tr>
+
+<tr>
+<td class="text-left">而今</td>
+<td class="text-right">331</td>
+<td class="text-left">夕阳</td>
+<td class="text-right">237.8</td>
+</tr>
+
+<tr>
+<td class="text-left">长安</td>
+<td class="text-right">328</td>
+<td class="text-left">扁舟</td>
+<td class="text-right">237.6</td>
+</tr>
+
+<tr>
+<td class="text-left">去年</td>
+<td class="text-right">327</td>
+<td class="text-left">来时</td>
+<td class="text-right">237.4</td>
+</tr>
+
+<tr>
+<td class="text-left">佳人</td>
+<td class="text-right">324</td>
+<td class="text-left">往事</td>
+<td class="text-right">236.1</td>
+</tr>
+
+<tr>
+<td class="text-left">不是</td>
+<td class="text-right">324</td>
+<td class="text-left">不似</td>
+<td class="text-right">234.2</td>
+</tr>
+
+<tr>
+<td class="text-left">少年</td>
+<td class="text-right">323</td>
+<td class="text-left">今夜</td>
+<td class="text-right">234.1</td>
+</tr>
+
+<tr>
+<td class="text-left">何时</td>
+<td class="text-right">322</td>
+<td class="text-left">惟有</td>
+<td class="text-right">232.1</td>
+</tr>
+
+<tr>
+<td class="text-left">江上</td>
+<td class="text-right">321</td>
+<td class="text-left">人生</td>
+<td class="text-right">231.3</td>
+</tr>
+
+<tr>
+<td class="text-left">谁知</td>
+<td class="text-right">319</td>
+<td class="text-left">人在</td>
+<td class="text-right">230.7</td>
+</tr>
+
+<tr>
+<td class="text-left">悠悠</td>
+<td class="text-right">319</td>
+<td class="text-left">功名</td>
+<td class="text-right">230.6</td>
+</tr>
+
+<tr>
+<td class="text-left">无情</td>
+<td class="text-right">318</td>
+<td class="text-left">可怜</td>
+<td class="text-right">229.5</td>
+</tr>
+
+<tr>
+<td class="text-left">鸳鸯</td>
+<td class="text-right">318</td>
+<td class="text-left">几许</td>
+<td class="text-right">228.5</td>
+</tr>
+
+<tr>
+<td class="text-left">为谁</td>
+<td class="text-right">317</td>
+<td class="text-left">只有</td>
+<td class="text-right">228.5</td>
+</tr>
+
+<tr>
+<td class="text-left">不似</td>
+<td class="text-right">317</td>
+<td class="text-left">为谁</td>
+<td class="text-right">228.2</td>
+</tr>
+
+<tr>
+<td class="text-left">青山</td>
+<td class="text-right">317</td>
+<td class="text-left">别后</td>
+<td class="text-right">227.3</td>
+</tr>
+
+<tr>
+<td class="text-left">今夜</td>
+<td class="text-right">317</td>
+<td class="text-left">花开</td>
+<td class="text-right">225.6</td>
+</tr>
+
+<tr>
+<td class="text-left">海棠</td>
+<td class="text-right">313</td>
+<td class="text-left">梧桐</td>
+<td class="text-right">222.8</td>
+</tr>
+
+<tr>
+<td class="text-left">行人</td>
+<td class="text-right">313</td>
+<td class="text-left">千古</td>
+<td class="text-right">222.4</td>
+</tr>
+
+<tr>
+<td class="text-left">时候</td>
+<td class="text-right">312</td>
+<td class="text-left">人不</td>
+<td class="text-right">221.9</td>
+</tr>
+
+<tr>
+<td class="text-left">往事</td>
+<td class="text-right">312</td>
+<td class="text-left">无数</td>
+<td class="text-right">220.8</td>
+</tr>
+
+<tr>
+<td class="text-left">惟有</td>
+<td class="text-right">312</td>
+<td class="text-left">青山</td>
+<td class="text-right">217.9</td>
+</tr>
+
+<tr>
+<td class="text-left">寂寞</td>
+<td class="text-right">310</td>
+<td class="text-left">秋千</td>
+<td class="text-right">217.4</td>
+</tr>
+
+<tr>
+<td class="text-left">如何</td>
+<td class="text-right">309</td>
+<td class="text-left">飞絮</td>
+<td class="text-right">216.7</td>
+</tr>
+
+<tr>
+<td class="text-left">月明</td>
+<td class="text-right">309</td>
+<td class="text-left">一番</td>
+<td class="text-right">214.7</td>
+</tr>
+
+<tr>
+<td class="text-left">蓬莱</td>
+<td class="text-right">309</td>
+<td class="text-left">细雨</td>
+<td class="text-right">214.5</td>
+</tr>
+
+<tr>
+<td class="text-left">一曲</td>
+<td class="text-right">304</td>
+<td class="text-left">一片</td>
+<td class="text-right">213.8</td>
+</tr>
+
+<tr>
+<td class="text-left">落花</td>
+<td class="text-right">301</td>
+<td class="text-left">桃花</td>
+<td class="text-right">212.1</td>
+</tr>
+
+<tr>
+<td class="text-left">天气</td>
+<td class="text-right">299</td>
+<td class="text-left">不如</td>
+<td class="text-right">211.9</td>
+</tr>
+
+<tr>
+<td class="text-left">燕子</td>
+<td class="text-right">299</td>
+<td class="text-left">几度</td>
+<td class="text-right">208.1</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+
+
+<div id="outline-container-sec-" class="outline-3">
+<h3 id="sec-">三字词频</h3>
+<div class="outline-text-3" id="text-">
+<table class="table table-striped table-bordered table-hover table-condensed">
+
+
+<colgroup>
+<col  class="left">
+
+<col  class="right">
+</colgroup>
+<tbody>
+<tr>
+<td class="text-left">东风吹</td>
+<td class="text-right">119</td>
+</tr>
+
+<tr>
+<td class="text-left">倚阑干</td>
+<td class="text-right">119</td>
+</tr>
+
+<tr>
+<td class="text-left">广寒宫</td>
+<td class="text-right">103</td>
+</tr>
+
+<tr>
+<td class="text-left">到如今</td>
+<td class="text-right">102</td>
+</tr>
+
+<tr>
+<td class="text-left">知何处</td>
+<td class="text-right">100</td>
+</tr>
+
+<tr>
+<td class="text-left">西风吹</td>
+<td class="text-right">89</td>
+</tr>
+
+<tr>
+<td class="text-left">人何处</td>
+<td class="text-right">84</td>
+</tr>
+
+<tr>
+<td class="text-left">人间世</td>
+<td class="text-right">76</td>
+</tr>
+
+<tr>
+<td class="text-left">留不住</td>
+<td class="text-right">75</td>
+</tr>
+
+<tr>
+<td class="text-left">有谁知</td>
+<td class="text-right">74</td>
+</tr>
+
+<tr>
+<td class="text-left">三十六</td>
+<td class="text-right">69</td>
+</tr>
+
+<tr>
+<td class="text-left">云深处</td>
+<td class="text-right">69</td>
+</tr>
+
+<tr>
+<td class="text-left">人不见</td>
+<td class="text-right">66</td>
+</tr>
+
+<tr>
+<td class="text-left">归去来</td>
+<td class="text-right">63</td>
+</tr>
+
+<tr>
+<td class="text-left">与谁同</td>
+<td class="text-right">61</td>
+</tr>
+
+<tr>
+<td class="text-left">年今日</td>
+<td class="text-right">61</td>
+</tr>
+
+<tr>
+<td class="text-left">不知何</td>
+<td class="text-right">60</td>
+</tr>
+
+<tr>
+<td class="text-left">人千里</td>
+<td class="text-right">59</td>
+</tr>
+
+<tr>
+<td class="text-left">君知否</td>
+<td class="text-right">59</td>
+</tr>
+
+<tr>
+<td class="text-left">不如归</td>
+<td class="text-right">59</td>
+</tr>
+
+<tr>
+<td class="text-left">何处是</td>
+<td class="text-right">57</td>
+</tr>
+
+<tr>
+<td class="text-left">春归去</td>
+<td class="text-right">56</td>
+</tr>
+
+<tr>
+<td class="text-left">向尊前</td>
+<td class="text-right">54</td>
+</tr>
+
+<tr>
+<td class="text-left">后行吹</td>
+<td class="text-right">54</td>
+</tr>
+
+<tr>
+<td class="text-left">花飞絮</td>
+<td class="text-right">53</td>
+</tr>
+
+<tr>
+<td class="text-left">了后行</td>
+<td class="text-right">53</td>
+</tr>
+
+<tr>
+<td class="text-left">人间天</td>
+<td class="text-right">52</td>
+</tr>
+
+<tr>
+<td class="text-left">花流水</td>
+<td class="text-right">51</td>
+</tr>
+
+<tr>
+<td class="text-left">二十四</td>
+<td class="text-right">50</td>
+</tr>
+
+<tr>
+<td class="text-left">花深处</td>
+<td class="text-right">48</td>
+</tr>
+
+<tr>
+<td class="text-left">落花飞</td>
+<td class="text-right">47</td>
+</tr>
+
+<tr>
+<td class="text-left">江南春</td>
+<td class="text-right">47</td>
+</tr>
+
+<tr>
+<td class="text-left">在何处</td>
+<td class="text-right">46</td>
+</tr>
+
+<tr>
+<td class="text-left">归何处</td>
+<td class="text-right">46</td>
+</tr>
+
+<tr>
+<td class="text-left">间天上</td>
+<td class="text-right">46</td>
+</tr>
+
+<tr>
+<td class="text-left">倚东风</td>
+<td class="text-right">46</td>
+</tr>
+
+<tr>
+<td class="text-left">雨初晴</td>
+<td class="text-right">44</td>
+</tr>
+
+<tr>
+<td class="text-left">是人间</td>
+<td class="text-right">44</td>
+</tr>
+
+<tr>
+<td class="text-left">功名事</td>
+<td class="text-right">44</td>
+</tr>
+
+<tr>
+<td class="text-left">海棠开</td>
+<td class="text-right">44</td>
+</tr>
+
+<tr>
+<td class="text-left">知多少</td>
+<td class="text-right">44</td>
+</tr>
+
+<tr>
+<td class="text-left">谁知道</td>
+<td class="text-right">43</td>
+</tr>
+
+<tr>
+<td class="text-left">人间何</td>
+<td class="text-right">43</td>
+</tr>
+
+<tr>
+<td class="text-left">山无数</td>
+<td class="text-right">42</td>
+</tr>
+
+<tr>
+<td class="text-left">歌金缕</td>
+<td class="text-right">42</td>
+</tr>
+
+<tr>
+<td class="text-left">去来兮</td>
+<td class="text-right">42</td>
+</tr>
+
+<tr>
+<td class="text-left">长安道</td>
+<td class="text-right">42</td>
+</tr>
+
+<tr>
+<td class="text-left">记当年</td>
+<td class="text-right">42</td>
+</tr>
+
+<tr>
+<td class="text-left">断人肠</td>
+<td class="text-right">42</td>
+</tr>
+
+<tr>
+<td class="text-left">东风里</td>
+<td class="text-right">42</td>
+</tr>
+
+<tr>
+<td class="text-left">如归去</td>
+<td class="text-right">42</td>
+</tr>
+
+<tr>
+<td class="text-left">那堪更</td>
+<td class="text-right">42</td>
+</tr>
+
+<tr>
+<td class="text-left">故人相</td>
+<td class="text-right">41</td>
+</tr>
+
+<tr>
+<td class="text-left">桥流水</td>
+<td class="text-right">41</td>
+</tr>
+
+<tr>
+<td class="text-left">花无数</td>
+<td class="text-right">41</td>
+</tr>
+
+<tr>
+<td class="text-left">渔家傲</td>
+<td class="text-right">41</td>
+</tr>
+
+<tr>
+<td class="text-left">海棠花</td>
+<td class="text-right">41</td>
+</tr>
+
+<tr>
+<td class="text-left">杜鹃啼</td>
+<td class="text-right">41</td>
+</tr>
+
+<tr>
+<td class="text-left">一番新</td>
+<td class="text-right">40</td>
+</tr>
+
+<tr>
+<td class="text-left">何处不</td>
+<td class="text-right">40</td>
+</tr>
+
+<tr>
+<td class="text-left">人憔悴</td>
+<td class="text-right">40</td>
+</tr>
+
+<tr>
+<td class="text-left">老人星</td>
+<td class="text-right">39</td>
+</tr>
+
+<tr>
+<td class="text-left">二十年</td>
+<td class="text-right">39</td>
+</tr>
+
+<tr>
+<td class="text-left">月清风</td>
+<td class="text-right">39</td>
+</tr>
+
+<tr>
+<td class="text-left">随流水</td>
+<td class="text-right">39</td>
+</tr>
+
+<tr>
+<td class="text-left">此时情</td>
+<td class="text-right">38</td>
+</tr>
+
+<tr>
+<td class="text-left">送春归</td>
+<td class="text-right">38</td>
+</tr>
+
+<tr>
+<td class="text-left">明月清</td>
+<td class="text-right">38</td>
+</tr>
+
+<tr>
+<td class="text-left">年年此</td>
+<td class="text-right">38</td>
+</tr>
+
+<tr>
+<td class="text-left">一年春</td>
+<td class="text-right">37</td>
+</tr>
+
+<tr>
+<td class="text-left">水晶宫</td>
+<td class="text-right">37</td>
+</tr>
+
+<tr>
+<td class="text-left">寄相思</td>
+<td class="text-right">37</td>
+</tr>
+
+<tr>
+<td class="text-left">记年时</td>
+<td class="text-right">36</td>
+</tr>
+
+<tr>
+<td class="text-left">唱了后</td>
+<td class="text-right">36</td>
+</tr>
+
+<tr>
+<td class="text-left">无觅处</td>
+<td class="text-right">36</td>
+</tr>
+
+<tr>
+<td class="text-left">东风不</td>
+<td class="text-right">36</td>
+</tr>
+
+<tr>
+<td class="text-left">江南路</td>
+<td class="text-right">36</td>
+</tr>
+
+<tr>
+<td class="text-left">然一笑</td>
+<td class="text-right">36</td>
+</tr>
+
+<tr>
+<td class="text-left">天如水</td>
+<td class="text-right">36</td>
+</tr>
+
+<tr>
+<td class="text-left">无消息</td>
+<td class="text-right">36</td>
+</tr>
+
+<tr>
+<td class="text-left">何处去</td>
+<td class="text-right">36</td>
+</tr>
+
+<tr>
+<td class="text-left">最好是</td>
+<td class="text-right">36</td>
+</tr>
+
+<tr>
+<td class="text-left">几时休</td>
+<td class="text-right">35</td>
+</tr>
+
+<tr>
+<td class="text-left">去年今</td>
+<td class="text-right">35</td>
+</tr>
+
+<tr>
+<td class="text-left">天上人</td>
+<td class="text-right">35</td>
+</tr>
+
+<tr>
+<td class="text-left">个人人</td>
+<td class="text-right">35</td>
+</tr>
+
+<tr>
+<td class="text-left">是神仙</td>
+<td class="text-right">34</td>
+</tr>
+
+<tr>
+<td class="text-left">在人间</td>
+<td class="text-right">34</td>
+</tr>
+
+<tr>
+<td class="text-left">尽人间</td>
+<td class="text-right">34</td>
+</tr>
+
+<tr>
+<td class="text-left">留春住</td>
+<td class="text-right">34</td>
+</tr>
+
+<tr>
+<td class="text-left">一作</td>
+<td class="text-right">34</td>
+</tr>
+
+<tr>
+<td class="text-left">君不见</td>
+<td class="text-right">34</td>
+</tr>
+
+<tr>
+<td class="text-left">十年前</td>
+<td class="text-right">34</td>
+</tr>
+
+<tr>
+<td class="text-left">向人间</td>
+<td class="text-right">34</td>
+</tr>
+
+<tr>
+<td class="text-left">人如玉</td>
+<td class="text-right">34</td>
+</tr>
+
+<tr>
+<td class="text-left">无寻处</td>
+<td class="text-right">33</td>
+</tr>
+
+<tr>
+<td class="text-left">一枝春</td>
+<td class="text-right">33</td>
+</tr>
+
+<tr>
+<td class="text-left">唱阳关</td>
+<td class="text-right">33</td>
+</tr>
+
+<tr>
+<td class="text-left">寒宫殿</td>
+<td class="text-right">33</td>
+</tr>
+
+<tr>
+<td class="text-left">与君同</td>
+<td class="text-right">33</td>
+</tr>
+
+<tr>
+<td class="text-left">须信道</td>
+<td class="text-right">33</td>
+</tr>
+
+<tr>
+<td class="text-left">又是一</td>
+<td class="text-right">33</td>
+</tr>
+
+<tr>
+<td class="text-left">朱颜绿</td>
+<td class="text-right">33</td>
+</tr>
+
+<tr>
+<td class="text-left">花时候</td>
+<td class="text-right">33</td>
+</tr>
+
+<tr>
+<td class="text-left">今夜月</td>
+<td class="text-right">33</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+
+
+<div id="outline-container-sec-" class="outline-2">
+<h2 id="sec-">宋诗</h2>
+<div class="outline-text-2" id="text-">
+<table class="table table-striped table-bordered table-hover table-condensed">
+
+
+<colgroup>
+<col  class="left">
+
+<col  class="right">
+</colgroup>
+<tbody>
+<tr>
+<td class="text-left">春风</td>
+<td class="text-right">32</td>
+</tr>
+
+<tr>
+<td class="text-left">万里</td>
+<td class="text-right">25</td>
+</tr>
+
+<tr>
+<td class="text-left">不知</td>
+<td class="text-right">21</td>
+</tr>
+
+<tr>
+<td class="text-left">东风</td>
+<td class="text-right">19</td>
+</tr>
+
+<tr>
+<td class="text-left">无人</td>
+<td class="text-right">19</td>
+</tr>
+
+<tr>
+<td class="text-left">年年</td>
+<td class="text-right">16</td>
+</tr>
+
+<tr>
+<td class="text-left">少年</td>
+<td class="text-right">15</td>
+</tr>
+
+<tr>
+<td class="text-left">江南</td>
+<td class="text-right">14</td>
+</tr>
+
+<tr>
+<td class="text-left">何处</td>
+<td class="text-right">14</td>
+</tr>
+
+<tr>
+<td class="text-left">风雨</td>
+<td class="text-right">14</td>
+</tr>
+
+<tr>
+<td class="text-left">归来</td>
+<td class="text-right">13</td>
+</tr>
+
+<tr>
+<td class="text-left">人间</td>
+<td class="text-right">13</td>
+</tr>
+
+<tr>
+<td class="text-left">风吹</td>
+<td class="text-right">13</td>
+</tr>
+
+<tr>
+<td class="text-left">天涯</td>
+<td class="text-right">12</td>
+</tr>
+
+<tr>
+<td class="text-left">十年</td>
+<td class="text-right">12</td>
+</tr>
+
+<tr>
+<td class="text-left">不见</td>
+<td class="text-right">12</td>
+</tr>
+
+<tr>
+<td class="text-left">一作</td>
+<td class="text-right">12</td>
+</tr>
+
+<tr>
+<td class="text-left">寒食</td>
+<td class="text-right">12</td>
+</tr>
+
+<tr>
+<td class="text-left">千里</td>
+<td class="text-right">12</td>
+</tr>
+
+<tr>
+<td class="text-left">天地</td>
+<td class="text-right">11</td>
+</tr>
+
+<tr>
+<td class="text-left">平生</td>
+<td class="text-right">11</td>
+</tr>
+
+<tr>
+<td class="text-left">读书</td>
+<td class="text-right">11</td>
+</tr>
+
+<tr>
+<td class="text-left">清明</td>
+<td class="text-right">11</td>
+</tr>
+
+<tr>
+<td class="text-left">惟有</td>
+<td class="text-right">11</td>
+</tr>
+
+<tr>
+<td class="text-left">一1</td>
+<td class="text-right">1</td>
+</tr>
+
+<tr>
+<td class="text-left">夕阳</td>
+<td class="text-right">11</td>
+</tr>
+
+<tr>
+<td class="text-left">不须</td>
+<td class="text-right">10</td>
+</tr>
+
+<tr>
+<td class="text-left">池塘</td>
+<td class="text-right">10</td>
+</tr>
+
+<tr>
+<td class="text-left">不可</td>
+<td class="text-right">10</td>
+</tr>
+
+<tr>
+<td class="text-left">西风</td>
+<td class="text-right">10</td>
+</tr>
+
+<tr>
+<td class="text-left">儿女</td>
+<td class="text-right">10</td>
+</tr>
+
+<tr>
+<td class="text-left">今日</td>
+<td class="text-right">10</td>
+</tr>
+
+<tr>
+<td class="text-left">人生</td>
+<td class="text-right">10</td>
+</tr>
+
+<tr>
+<td class="text-left">人不</td>
+<td class="text-right">10</td>
+</tr>
+
+<tr>
+<td class="text-left">明月</td>
+<td class="text-right">9</td>
+</tr>
+
+<tr>
+<td class="text-left">明年</td>
+<td class="text-right">9</td>
+</tr>
+
+<tr>
+<td class="text-left">今年</td>
+<td class="text-right">9</td>
+</tr>
+
+<tr>
+<td class="text-left">去年</td>
+<td class="text-right">9</td>
+</tr>
+
+<tr>
+<td class="text-left">春水</td>
+<td class="text-right">9</td>
+</tr>
+
+<tr>
+<td class="text-left">故人</td>
+<td class="text-right">9</td>
+</tr>
+
+<tr>
+<td class="text-left">秋风</td>
+<td class="text-right">9</td>
+</tr>
+
+<tr>
+<td class="text-left">梅花</td>
+<td class="text-right">9</td>
+</tr>
+
+<tr>
+<td class="text-left">落日</td>
+<td class="text-right">9</td>
+</tr>
+
+<tr>
+<td class="text-left">落花</td>
+<td class="text-right">9</td>
+</tr>
+
+<tr>
+<td class="text-left">则为</td>
+<td class="text-right">9</td>
+</tr>
+
+<tr>
+<td class="text-left">回首</td>
+<td class="text-right">9</td>
+</tr>
+
+<tr>
+<td class="text-left">当时</td>
+<td class="text-right">8</td>
+</tr>
+
+<tr>
+<td class="text-left">天下</td>
+<td class="text-right">8</td>
+</tr>
+
+<tr>
+<td class="text-left">不自</td>
+<td class="text-right">8</td>
+</tr>
+
+<tr>
+<td class="text-left">不能</td>
+<td class="text-right">8</td>
+</tr>
+
+<tr>
+<td class="text-left">细雨</td>
+<td class="text-right">8</td>
+</tr>
+
+<tr>
+<td class="text-left">中有</td>
+<td class="text-right">8</td>
+</tr>
+
+<tr>
+<td class="text-left">行人</td>
+<td class="text-right">8</td>
+</tr>
+
+<tr>
+<td class="text-left">一樽</td>
+<td class="text-right">8</td>
+</tr>
+
+<tr>
+<td class="text-left">花开</td>
+<td class="text-right">8</td>
+</tr>
+
+<tr>
+<td class="text-left">一年</td>
+<td class="text-right">8</td>
+</tr>
+
+<tr>
+<td class="text-left">草木</td>
+<td class="text-right">8</td>
+</tr>
+
+<tr>
+<td class="text-left">日暮</td>
+<td class="text-right">8</td>
+</tr>
+
+<tr>
+<td class="text-left">几时</td>
+<td class="text-right">8</td>
+</tr>
+
+<tr>
+<td class="text-left">白发</td>
+<td class="text-right">7</td>
+</tr>
+
+<tr>
+<td class="text-left">重阳</td>
+<td class="text-right">7</td>
+</tr>
+
+<tr>
+<td class="text-left">时有</td>
+<td class="text-right">7</td>
+</tr>
+
+<tr>
+<td class="text-left">中原</td>
+<td class="text-right">7</td>
+</tr>
+
+<tr>
+<td class="text-left">东西</td>
+<td class="text-right">7</td>
+</tr>
+
+<tr>
+<td class="text-left">时则</td>
+<td class="text-right">7</td>
+</tr>
+
+<tr>
+<td class="text-left">富贵</td>
+<td class="text-right">7</td>
+</tr>
+
+<tr>
+<td class="text-left">南山</td>
+<td class="text-right">7</td>
+</tr>
+
+<tr>
+<td class="text-left">时节</td>
+<td class="text-right">7</td>
+</tr>
+
+<tr>
+<td class="text-left">道人</td>
+<td class="text-right">7</td>
+</tr>
+
+<tr>
+<td class="text-left">不是</td>
+<td class="text-right">7</td>
+</tr>
+
+<tr>
+<td class="text-left">君不</td>
+<td class="text-right">7</td>
+</tr>
+
+<tr>
+<td class="text-left">文章</td>
+<td class="text-right">7</td>
+</tr>
+
+<tr>
+<td class="text-left">一杯</td>
+<td class="text-right">7</td>
+</tr>
+
+<tr>
+<td class="text-left">飞来</td>
+<td class="text-right">7</td>
+</tr>
+
+<tr>
+<td class="text-left">萧萧</td>
+<td class="text-right">7</td>
+</tr>
+
+<tr>
+<td class="text-left">一片</td>
+<td class="text-right">7</td>
+</tr>
+
+<tr>
+<td class="text-left">花一</td>
+<td class="text-right">7</td>
+</tr>
+
+<tr>
+<td class="text-left">无情</td>
+<td class="text-right">7</td>
+</tr>
+
+<tr>
+<td class="text-left">三月</td>
+<td class="text-right">7</td>
+</tr>
+
+<tr>
+<td class="text-left">日长</td>
+<td class="text-right">7</td>
+</tr>
+
+<tr>
+<td class="text-left">青山</td>
+<td class="text-right">7</td>
+</tr>
+
+<tr>
+<td class="text-left">父老</td>
+<td class="text-right">7</td>
+</tr>
+
+<tr>
+<td class="text-left">不动</td>
+<td class="text-right">7</td>
+</tr>
+
+<tr>
+<td class="text-left">不得</td>
+<td class="text-right">7</td>
+</tr>
+
+<tr>
+<td class="text-left">梨花</td>
+<td class="text-right">7</td>
+</tr>
+
+<tr>
+<td class="text-left">水满</td>
+<td class="text-right">7</td>
+</tr>
+
+<tr>
+<td class="text-left">西湖</td>
+<td class="text-right">7</td>
+</tr>
+
+<tr>
+<td class="text-left">千载</td>
+<td class="text-right">7</td>
+</tr>
+
+<tr>
+<td class="text-left">桃花</td>
+<td class="text-right">7</td>
+</tr>
+
+<tr>
+<td class="text-left">夜半</td>
+<td class="text-right">6</td>
+</tr>
+
+<tr>
+<td class="text-left">天子</td>
+<td class="text-right">6</td>
+</tr>
+
+<tr>
+<td class="text-left">天寒</td>
+<td class="text-right">6</td>
+</tr>
+
+<tr>
+<td class="text-left">五月</td>
+<td class="text-right">6</td>
+</tr>
+
+<tr>
+<td class="text-left">白头</td>
+<td class="text-right">6</td>
+</tr>
+
+<tr>
+<td class="text-left">百年</td>
+<td class="text-right">6</td>
+</tr>
+
+<tr>
+<td class="text-left">江湖</td>
+<td class="text-right">6</td>
+</tr>
+
+<tr>
+<td class="text-left">逢春</td>
+<td class="text-right">6</td>
+</tr>
+
+<tr>
+<td class="text-left">上花</td>
+<td class="text-right">6</td>
+</tr>
+
+<tr>
+<td class="text-left">春去</td>
+<td class="text-right">6</td>
+</tr>
+
+<tr>
+<td class="text-left">气；</td>
+<td class="text-right">6</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+<div id="outline-container-sec-" class="outline-2">
+<h2 id="sec-">元曲</h2>
+<div class="outline-text-2" id="text-">
+<table class="table table-striped table-bordered table-hover table-condensed">
+
+
+<colgroup>
+<col  class="left">
+
+<col  class="right">
+</colgroup>
+<tbody>
+<tr>
+<td class="text-left">正末</td>
+<td class="text-right">9829</td>
+</tr>
+
+<tr>
+<td class="text-left">末云</td>
+<td class="text-right">5979</td>
+</tr>
+
+<tr>
+<td class="text-left">唱【</td>
+<td class="text-right">5918</td>
+</tr>
+
+<tr>
+<td class="text-left">孩儿</td>
+<td class="text-right">4116</td>
+</tr>
+
+<tr>
+<td class="text-left">科云</td>
+<td class="text-right">3710</td>
+</tr>
+
+<tr>
+<td class="text-left">正旦</td>
+<td class="text-right">3644</td>
+</tr>
+
+<tr>
+<td class="text-left">末唱</td>
+<td class="text-right">3572</td>
+</tr>
+
+<tr>
+<td class="text-left">今日</td>
+<td class="text-right">3330</td>
+</tr>
+
+<tr>
+<td class="text-left">一个</td>
+<td class="text-right">3232</td>
+</tr>
+
+<tr>
+<td class="text-left">甚么</td>
+<td class="text-right">3075</td>
+</tr>
+
+<tr>
+<td class="text-left">旦云</td>
+<td class="text-right">2972</td>
+</tr>
+
+<tr>
+<td class="text-left">云我</td>
+<td class="text-right">2864</td>
+</tr>
+
+<tr>
+<td class="text-left">云你</td>
+<td class="text-right">2700</td>
+</tr>
+
+<tr>
+<td class="text-left">哥哥</td>
+<td class="text-right">2673</td>
+</tr>
+
+<tr>
+<td class="text-left">了也</td>
+<td class="text-right">2614</td>
+</tr>
+
+<tr>
+<td class="text-left">那里</td>
+<td class="text-right">2571</td>
+</tr>
+
+<tr>
+<td class="text-left">上云</td>
+<td class="text-right">2500</td>
+</tr>
+
+<tr>
+<td class="text-left">不是</td>
+<td class="text-right">2330</td>
+</tr>
+
+<tr>
+<td class="text-left">兄弟</td>
+<td class="text-right">2228</td>
+</tr>
+
+<tr>
+<td class="text-left">如今</td>
+<td class="text-right">2217</td>
+</tr>
+
+<tr>
+<td class="text-left">也正</td>
+<td class="text-right">1898</td>
+</tr>
+
+<tr>
+<td class="text-left">夫人</td>
+<td class="text-right">1898</td>
+</tr>
+
+<tr>
+<td class="text-left">怎生</td>
+<td class="text-right">1889</td>
+</tr>
+
+<tr>
+<td class="text-left">旦唱</td>
+<td class="text-right">1813</td>
+</tr>
+
+<tr>
+<td class="text-left">小生</td>
+<td class="text-right">1699</td>
+</tr>
+
+<tr>
+<td class="text-left">儿云</td>
+<td class="text-right">1699</td>
+</tr>
+
+<tr>
+<td class="text-left">我这</td>
+<td class="text-right">1686</td>
+</tr>
+
+<tr>
+<td class="text-left">两个</td>
+<td class="text-right">1682</td>
+</tr>
+
+<tr>
+<td class="text-left">不知</td>
+<td class="text-right">1658</td>
+</tr>
+
+<tr>
+<td class="text-left">张千</td>
+<td class="text-right">1561</td>
+</tr>
+
+<tr>
+<td class="text-left">也不</td>
+<td class="text-right">1559</td>
+</tr>
+
+<tr>
+<td class="text-left">云这</td>
+<td class="text-right">1558</td>
+</tr>
+
+<tr>
+<td class="text-left">与我</td>
+<td class="text-right">1540</td>
+</tr>
+
+<tr>
+<td class="text-left">去了</td>
+<td class="text-right">1509</td>
+</tr>
+
+<tr>
+<td class="text-left">的是</td>
+<td class="text-right">1504</td>
+</tr>
+
+<tr>
+<td class="text-left">是我</td>
+<td class="text-right">1503</td>
+</tr>
+
+<tr>
+<td class="text-left">这里</td>
+<td class="text-right">1495</td>
+</tr>
+
+<tr>
+<td class="text-left">云小</td>
+<td class="text-right">1484</td>
+</tr>
+
+<tr>
+<td class="text-left">秀才</td>
+<td class="text-right">1338</td>
+</tr>
+
+<tr>
+<td class="text-left">相公</td>
+<td class="text-right">1337</td>
+</tr>
+
+<tr>
+<td class="text-left">员外</td>
+<td class="text-right">1305</td>
+</tr>
+
+<tr>
+<td class="text-left">了我</td>
+<td class="text-right">1294</td>
+</tr>
+
+<tr>
+<td class="text-left">老夫</td>
+<td class="text-right">1272</td>
+</tr>
+
+<tr>
+<td class="text-left">知道</td>
+<td class="text-right">1252</td>
+</tr>
+
+<tr>
+<td class="text-left">与你</td>
+<td class="text-right">1239</td>
+</tr>
+
+<tr>
+<td class="text-left">父亲</td>
+<td class="text-right">1238</td>
+</tr>
+
+<tr>
+<td class="text-left">怎么</td>
+<td class="text-right">1213</td>
+</tr>
+
+<tr>
+<td class="text-left">来到</td>
+<td class="text-right">1189</td>
+</tr>
+
+<tr>
+<td class="text-left">这一</td>
+<td class="text-right">1188</td>
+</tr>
+
+<tr>
+<td class="text-left">着我</td>
+<td class="text-right">1184</td>
+</tr>
+
+<tr>
+<td class="text-left">如何</td>
+<td class="text-right">1164</td>
+</tr>
+
+<tr>
+<td class="text-left">来了</td>
+<td class="text-right">1162</td>
+</tr>
+
+<tr>
+<td class="text-left">便是</td>
+<td class="text-right">1141</td>
+</tr>
+
+<tr>
+<td class="text-left">我也</td>
+<td class="text-right">1138</td>
+</tr>
+
+<tr>
+<td class="text-left">不曾</td>
+<td class="text-right">1135</td>
+</tr>
+
+<tr>
+<td class="text-left">母亲</td>
+<td class="text-right">1114</td>
+</tr>
+
+<tr>
+<td class="text-left">这个</td>
+<td class="text-right">1098</td>
+</tr>
+
+<tr>
+<td class="text-left">见科</td>
+<td class="text-right">1098</td>
+</tr>
+
+<tr>
+<td class="text-left">去来</td>
+<td class="text-right">1097</td>
+</tr>
+
+<tr>
+<td class="text-left">小官</td>
+<td class="text-right">1097</td>
+</tr>
+
+<tr>
+<td class="text-left">理会</td>
+<td class="text-right">1084</td>
+</tr>
+
+<tr>
+<td class="text-left">有甚</td>
+<td class="text-right">1068</td>
+</tr>
+
+<tr>
+<td class="text-left">元帅</td>
+<td class="text-right">1053</td>
+</tr>
+
+<tr>
+<td class="text-left">云老</td>
+<td class="text-right">1046</td>
+</tr>
+
+<tr>
+<td class="text-left">的不</td>
+<td class="text-right">1035</td>
+</tr>
+
+<tr>
+<td class="text-left">卜儿</td>
+<td class="text-right">1028</td>
+</tr>
+
+<tr>
+<td class="text-left">这等</td>
+<td class="text-right">1026</td>
+</tr>
+
+<tr>
+<td class="text-left">小姐</td>
+<td class="text-right">1018</td>
+</tr>
+
+<tr>
+<td class="text-left">一遭</td>
+<td class="text-right">1016</td>
+</tr>
+
+<tr>
+<td class="text-left">大人</td>
+<td class="text-right">1007</td>
+</tr>
+
+<tr>
+<td class="text-left">诗云</td>
+<td class="text-right">992</td>
+</tr>
+
+<tr>
+<td class="text-left">是也</td>
+<td class="text-right">992</td>
+</tr>
+
+<tr>
+<td class="text-left">你这</td>
+<td class="text-right">991</td>
+</tr>
+
+<tr>
+<td class="text-left">你那</td>
+<td class="text-right">991</td>
+</tr>
+
+<tr>
+<td class="text-left">】我</td>
+<td class="text-right">990</td>
+</tr>
+
+<tr>
+<td class="text-left">兀那</td>
+<td class="text-right">989</td>
+</tr>
+
+<tr>
+<td class="text-left">会的</td>
+<td class="text-right">984</td>
+</tr>
+
+<tr>
+<td class="text-left">不得</td>
+<td class="text-right">981</td>
+</tr>
+
+<tr>
+<td class="text-left">云理</td>
+<td class="text-right">970</td>
+</tr>
+
+<tr>
+<td class="text-left">子云</td>
+<td class="text-right">956</td>
+</tr>
+
+<tr>
+<td class="text-left">将军</td>
+<td class="text-right">946</td>
+</tr>
+
+<tr>
+<td class="text-left">的我</td>
+<td class="text-right">944</td>
+</tr>
+
+<tr>
+<td class="text-left">先生</td>
+<td class="text-right">940</td>
+</tr>
+
+<tr>
+<td class="text-left">走一</td>
+<td class="text-right">921</td>
+</tr>
+
+<tr>
+<td class="text-left">是个</td>
+<td class="text-right">911</td>
+</tr>
+
+<tr>
+<td class="text-left">兀的</td>
+<td class="text-right">908</td>
+</tr>
+
+<tr>
+<td class="text-left">卒子</td>
+<td class="text-right">904</td>
+</tr>
+
+<tr>
+<td class="text-left">我不</td>
+<td class="text-right">901</td>
+</tr>
+
+<tr>
+<td class="text-left">云哥</td>
+<td class="text-right">900</td>
+</tr>
+
+<tr>
+<td class="text-left">旦儿</td>
+<td class="text-right">889</td>
+</tr>
+
+<tr>
+<td class="text-left">儿】</td>
+<td class="text-right">887</td>
+</tr>
+
+<tr>
+<td class="text-left">是你</td>
+<td class="text-right">885</td>
+</tr>
+
+<tr>
+<td class="text-left">着他</td>
+<td class="text-right">884</td>
+</tr>
+
+<tr>
+<td class="text-left">这般</td>
+<td class="text-right">884</td>
+</tr>
+
+<tr>
+<td class="text-left">了你</td>
+<td class="text-right">865</td>
+</tr>
+
+<tr>
+<td class="text-left">有一</td>
+<td class="text-right">865</td>
+</tr>
+
+<tr>
+<td class="text-left">科正</td>
+<td class="text-right">863</td>
+</tr>
+
+<tr>
+<td class="text-left">来正</td>
+<td class="text-right">863</td>
+</tr>
+
+<tr>
+<td class="text-left">师父</td>
+<td class="text-right">854</td>
+</tr>
+
+<tr>
+<td class="text-left">来我</td>
+<td class="text-right">850</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div><div class="col-md-3"><nav id="table-of-contents">
+<div id="text-table-of-contents" class="bs-docs-sidebar">
+<ul class="nav">
+<li><a href="#sec-">唐诗</a>
+<ul class="nav">
+<li><a href="#sec-">唐诗、宋词两字词频比较</a></li>
+<li><a href="#sec-">加权词频</a></li>
+</ul>
+</li>
+<li><a href="#sec-">宋词</a>
+<ul class="nav">
+<li><a href="#sec-">两字词频</a></li>
+<li><a href="#sec-">三字词频</a></li>
+</ul>
+</li>
+<li><a href="#sec-">宋诗</a></li>
+<li><a href="#sec-">元曲</a></li>
+</ul>
+</div>
+</nav>
+</div></div></div>
+<footer id="postamble" class="">
+
+
+<!-- UY BEGIN -->
+<div id="uyan_frame"></div>
+<script type="text/javascript" src="http://v2.uyan.cc/code/uyan.js?uid=2120452"></script>
+<!-- UY END -->
+
+
+   <div id = "baidu_tongji">
+   <script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "//hm.baidu.com/hm.js?4a01ad9c7f0b2821093f8db022570698";
+  var s = document.getElementsByTagName("script")[0];
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+
+   </div>
+
+   <div class='footer'>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;更新时间：2016-08-07 日 23:21 <br>
+   本博客基于 <a href="http://www.gnu.org/software/emacs/">Emacs</a> 25.2.1 (<a href="http://orgmode.org">Org-mode</a> 9.0.5) 打造。
+   </div>
+</footer>
+</body>
+</html>
